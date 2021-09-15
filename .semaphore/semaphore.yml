@@ -10,8 +10,8 @@ blocks:
       jobs:
         - name: yarn install
           commands:
-            - sem-version node 8
+            - sem-version node 12
             - checkout
             - yarn install
-            - yarn test
+            - yarn cypress
             - 'yarn cy:integrate'
