@@ -13,5 +13,4 @@ blocks:
             - sem-version node 12
             - checkout
             - yarn install
-            - yarn cypress
-            - 'yarn cy:integrate'
+            - 'yarn cypress:ci'
