@@ -9,7 +9,7 @@ describe("Vistor can see main page", () => {
       });
 
       it("is expected to show the main page ", () => {
-        cy.get("[data-cy=title]").should("contain", "Hello World");
+        cy.get("[data-cy=title]").should("contain", "Hello World! Nice to see you.");
       });
     });
   });
