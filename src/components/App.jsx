@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Navbar from './Navbar';
 
 const App = () => {
   return (
-    <div data-cy='title'>
-      Hello World! Nice to see you.
-    </div>
-  )
-}
+    <>
+      <Navbar />
+    </>
+  );
+};
 
-export default App
+export default App;
