@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '@material-ui/core';
-import Navbar from './Navbar';
+import Navbar from '../components/navigation/Navbar';
 import pageTheme from '../theme/pageTheme';
 
 const App = () => {
