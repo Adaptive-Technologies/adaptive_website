@@ -6,31 +6,52 @@ import CustomButton from './CustomButton';
 
 const Navbar = () => {
   const tabsLeft = [
-    '< Home />',
-    '< Our Approach />',
-    '< Technologies />',
-  ]
-
+    {
+      name: 'home',
+      label: 'home',
+    },
+    {
+      name: 'our-approach',
+      label: 'our approach',
+    },
+    {
+      name: 'technologies',
+      label: 'technologies',
+    },
+  ];
   const tabsRight = [
-    '< About />',
-    '< Contact Us />',
-  ]
+    {
+      name: 'about',
+      label: 'about',
+    },
+    {
+      name: 'contact-us',
+      label: 'contact us',
+    },
+  ];
 
   const tabListLeft = tabsLeft.map((tab) => {
-    return <CustomButton name={tab} />;
+    const data = {};
+    data.name = tab.name;
+    data.label = tab.label;
+    return <CustomButton name={data.name} label={data.label} />;
   });
   const tabListRight = tabsRight.map((tab) => {
-    return <CustomButton name={tab} />;
+    const data = {};
+    data.name = tab.name;
+    data.label = tab.label;
+    return <CustomButton name={data.name} label={data.label} />;
   });
   const classes = navbarStyles();
   return (
     <>
-      <Box className={classes.container}>
+      <Box data-cy="navbar" className={classes.container}>
         <Box className={classes.textBox}>{tabListLeft}</Box>
         <CardMedia
           className={classes.image}
           component="img"
           image={Adaptive_logo}
+          data-cy='adaptive-logo'
         />
         <Box className={classes.textBox}>{tabListRight}</Box>
       </Box>
