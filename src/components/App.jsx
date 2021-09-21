@@ -1,10 +1,15 @@
 import React from 'react';
+import { Box } from '@material-ui/core';
 import Navbar from './Navbar';
+import pageTheme from '../theme/pageTheme';
 
 const App = () => {
+  const classes = pageTheme();
   return (
     <>
-      <Navbar />
+      <Box className={classes.pageContainer}>
+        <Navbar />
+      </Box>
     </>
   );
 };
