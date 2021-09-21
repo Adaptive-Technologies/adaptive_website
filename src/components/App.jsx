@@ -1,11 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { Box } from '@material-ui/core';
+import Navbar from './Navbar';
+import pageTheme from '../theme/pageTheme';
 
 const App = () => {
+  const classes = pageTheme();
   return (
-    <div data-cy='title'>
-      Hello World! Nice to see you.
-    </div>
-  )
-}
+    <>
+      <Box className={classes.pageContainer}>
+        <Navbar />
+      </Box>
+    </>
+  );
+};
 
-export default App
+export default App;
