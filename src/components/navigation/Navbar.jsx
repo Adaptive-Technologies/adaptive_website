@@ -14,7 +14,7 @@ import navbarHelper from '../../modules/navbarHelper'
 import theme from '../../theme/theme'
 
 const Navbar = () => {
-  const isMobile = useMediaQuery(theme.breakpoints.values.lg)
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'))
   const classes = useStyles()
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [tabs, setTabs] = useState([])
@@ -24,52 +24,48 @@ const Navbar = () => {
   }, [isMobile])
 
   return (
-    <>
+    <Box className={classes.section}>
       {isMobile ? (
-        <Box className={classes.section}>
-          <Box data-cy='navbar' className={classes.container}>
+        <Box data-cy='navbar' className={classes.container}>
+          <CardMedia
+            className={classes.logo}
+            component='img'
+            image={Adaptive_logo}
+            data-cy='adaptive-logo'
+          />
+          <SwipeableDrawer
+            PaperProps={{ className: classes.drawer }}
+            anchor='right'
+            open={drawerOpen}
+            onClose={() => setDrawerOpen(false)}
+            onOpen={() => setDrawerOpen(true)}>
+            {tabs}
+          </SwipeableDrawer>
+          <IconButton
+            className={classes.menuButton}
+            onClick={() => setDrawerOpen(true)}>
+            <Menu />
+          </IconButton>
+        </Box>
+      ) : (
+        <Box data-cy='navbar' className={classes.container}>
+          <Grid item container lg={5} className={classes.tabsLeft}>
+            {tabs.slice(0, 3)}
+          </Grid>
+          <Grid item container lg={2} className={classes.logoBox}>
             <CardMedia
               className={classes.logo}
               component='img'
               image={Adaptive_logo}
               data-cy='adaptive-logo'
             />
-            <SwipeableDrawer
-              PaperProps={{ className: classes.drawer }}
-              anchor='right'
-              open={drawerOpen}
-              onClose={() => setDrawerOpen(false)}
-              onOpen={() => setDrawerOpen(true)}>
-              {tabs}
-            </SwipeableDrawer>
-            <IconButton
-              className={classes.menuButton}
-              onClick={() => setDrawerOpen(true)}>
-              <Menu />
-            </IconButton>
-          </Box>
-        </Box>
-      ) : (
-        <Box className={classes.section}>
-          <Box data-cy='navbar' className={classes.container}>
-            <Grid item container lg={5} className={classes.tabsLeft}>
-              {tabs.slice(0, 3)}
-            </Grid>
-            <Grid item container lg={2} className={classes.logoBox}>
-              <CardMedia
-                className={classes.logo}
-                component='img'
-                image={Adaptive_logo}
-                data-cy='adaptive-logo'
-              />
-            </Grid>
-            <Grid item container lg={5} className={classes.tabsRight}>
-              {tabs.slice(3, 5)}
-            </Grid>
-          </Box>
+          </Grid>
+          <Grid item container lg={5} className={classes.tabsRight}>
+            {tabs.slice(3, 5)}
+          </Grid>
         </Box>
       )}
-    </>
+    </Box>
   )
 }
 

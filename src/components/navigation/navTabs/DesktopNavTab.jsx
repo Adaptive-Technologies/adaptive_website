@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tab, Tabs } from '@material-ui/core'
-import navbarStyles from '../../theme/views/navbar.theme'
+import navbarStyles from '../../../theme/views/navbar.theme'
 
 const NavButton = ({ name, label }) => {
   const classes = navbarStyles()

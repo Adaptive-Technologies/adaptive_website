@@ -1,6 +1,6 @@
-import DesktopNavTab from '../components/navigation/DesktopNavTab'
+import DesktopNavTab from '../components/navigation/navTabs/DesktopNavTab'
 import tabs from '../assets/data/tabs'
-import MobileNavTab from '../components/navigation/MobileNavTab'
+import MobileNavTab from '../components/navigation/navTabs/MobileNavTab'
 
 const navbarHelper = {
   buildTabs(isMobile) {
