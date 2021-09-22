@@ -1,35 +1,42 @@
 import { makeStyles } from '@material-ui/core';
 
 const navbarStyles = makeStyles((theme) => ({
-  container: {
-    [theme.breakpoints.up('xs')]: {
-      height: '100px'
-    },
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'nowrap',
+  headerContainer: {
     backgroundColor: '#250022',
     width: '100%',
+  },
+  container: {
+    [theme.breakpoints.up('xs')]: {
+      height: '30px',
+    },
+    display: 'flex',
+    maxWidth: '80%',
+    flexDirection: 'row',
     height: 'auto',
-    justifyContent: 'space-evenly',
     alignItems: 'center',
+    padding: '40px',
+    margin: 'auto'
+  },
+
+  imageBox: {
+    justifyContent: 'center',
   },
   image: {
     width: 'auto',
-    height: '80px',
-    justifySelf: 'center',
+    height: '60px',
   },
   button: {
     color: '#fff',
-    display: 'absolute',
+    minWidth: '0px',
   },
 
-  textBox: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'nowrap',
-    justifyContent: 'center',
+  textBoxLeft: {
     paddingTop: '10px',
+    justifyContent: 'flex-start',
+  },
+  textBoxRight: {
+    paddingTop: '10px',
+    justifyContent: 'flex-end',
   },
 }));
 
