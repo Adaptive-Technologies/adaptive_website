@@ -19,4 +19,6 @@ const palette = {
     main: '#49B6FF',
     contrastText: '#fff',
   },
-};
+}
+
+export default palette

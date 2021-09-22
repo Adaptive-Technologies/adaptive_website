@@ -1,23 +1,19 @@
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core'
 
-const navbarStyles = makeStyles((theme) => ({
-  headerContainer: {
+const useStyles = makeStyles((theme) => ({
+  headerSection: {
     backgroundColor: '#250022',
     width: '100%',
   },
   container: {
-    [theme.breakpoints.up('xs')]: {
-      height: '30px',
-    },
     display: 'flex',
-    maxWidth: '80%',
     flexDirection: 'row',
-    height: 'auto',
     alignItems: 'center',
+    maxWidth: theme.breakpoints.values.lg,    
     padding: '40px',
-    margin: 'auto'
+    margin: 'auto',
+    height: '30px',
   },
-
   imageBox: {
     justifyContent: 'center',
   },
@@ -29,7 +25,6 @@ const navbarStyles = makeStyles((theme) => ({
     color: '#fff',
     minWidth: '0px',
   },
-
   textBoxLeft: {
     paddingTop: '10px',
     justifyContent: 'flex-start',
@@ -38,6 +33,6 @@ const navbarStyles = makeStyles((theme) => ({
     paddingTop: '10px',
     justifyContent: 'flex-end',
   },
-}));
+}))
 
-export default navbarStyles;
+export default useStyles

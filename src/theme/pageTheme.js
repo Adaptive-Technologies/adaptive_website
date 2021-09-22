@@ -1,9 +1,9 @@
-import { makeStyles } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core'
 
-const pageTheme = makeStyles(() => ({
+const useStyles = makeStyles(() => ({
   pageContainer: {
     width: '100%',
   },
-}));
+}))
 
-export default pageTheme;
+export default useStyles
