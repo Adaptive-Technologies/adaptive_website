@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles(() => ({
-  pageContainer: {
+  body: {
     width: '100%',
   },
 }))

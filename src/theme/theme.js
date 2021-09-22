@@ -3,7 +3,6 @@ import palette from './palette.theme.js'
 
 const theme = createTheme({
   palette: palette,
-
   typography: {
     fontFamily: ['video', 'source-sans-pro'].join(','),
     h1: {

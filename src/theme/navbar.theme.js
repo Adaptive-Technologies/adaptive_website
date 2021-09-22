@@ -1,7 +1,7 @@
 import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
-  headerSection: {
+  section: {
     backgroundColor: '#250022',
     width: '100%',
   },
@@ -9,27 +9,37 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    maxWidth: theme.breakpoints.values.lg,    
-    padding: '40px',
+    maxWidth: theme.breakpoints.values.lg,
     margin: 'auto',
     height: '30px',
+    padding: '32px 16px',
+    [theme.breakpoints.up('lg')]: {
+      padding: '40px',
+    },
   },
-  imageBox: {
+  logoBox: {
     justifyContent: 'center',
   },
-  image: {
+  logo: {
     width: 'auto',
-    height: '60px',
+    height: '40px',
+    [theme.breakpoints.up('lg')]: {
+      height: '60px',
+    },
   },
-  button: {
+  navTab: {
     color: '#fff',
     minWidth: '0px',
   },
-  textBoxLeft: {
+  menuButton: {
+    color: '#fff',
+    marginLeft: 'auto'
+  },
+  tabsLeft: {
     paddingTop: '10px',
     justifyContent: 'flex-start',
   },
-  textBoxRight: {
+  tabsRight: {
     paddingTop: '10px',
     justifyContent: 'flex-end',
   },
