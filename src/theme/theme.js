@@ -4,59 +4,79 @@ import palette from './palette.theme'
 const theme = createTheme({
   palette: palette,
   typography: {
-    fontFamily: ['video', 'source-sans-pro'].join(','),
+    fontFamily: ['video', 'serif'].join(','),
+    fontStyle: 'normal',
     h1: {
-      fontStyle: 'regular',
       fontWeight: 400,
       fontSize: '60px',
+      '@media (max-width:800px)': {
+        fontSize: '36px',
+      },
     },
     h2: {
-      fontStyle: 'regular',
       fontWeight: 400,
-      fontSize: '2.4rem',
+      fontSize: '48px',
+      '@media (max-width:800px)': {
+        fontSize: '30px',
+      },
     },
     h3: {
-      fontStyle: 'semi-bold',
-      fontWeight: 600,
+      fontWeight: 700,
+      fontSize: '30px',
+      '@media (max-width:800px)': {
+        fontSize: '24px',
+      },
     },
     h4: {
-      fontStyle: 'regular',
-      fontWeight: 400,
-      fontSize: '1.5rem',
-    },
-    h5: {
-      fontStyle: 'light',
-      fontWeight: 300,
+      fontWeight: 700,
+      fontSize: '24px',
+      '@media (max-width:800px)': {
+        fontSize: '20px',
+      },
     },
     h6: {
-      fontStyle: 'semiBold',
       fontWeight: 600,
+      fontSize: '18px',
+      fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
+    },
+    techName: {
+      fontWeight: 400,
+      fontSize: '24px',
+    },
+    occupation: {
+      fontWeight: 300,
+      fontSize: '18px',
+      fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
     },
     body1: {
-      fontStyle: 'regular',
       fontWeight: 400,
-      fontSize: '18px',
+      fontSize: '24px',
+      fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
     },
     body2: {
-      fontStyle: 'semiBold',
-      fontWeight: 600,
+      fontWeight: 400,
       fontSize: '18px',
+      fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
     },
     button: {
-      fontStyle: 'regular',
       fontWeight: 400,
       textTransform: 'none',
-      fontSize: '18px',
+      fontSize: '36px',
+      '@media (min-width:600px)': {
+        fontSize: '18px',
+      },
     },
-    caption: {
-      fontStyle: 'bold',
-      fontWeight: 700,
-      fontSize: '18px',
+    sendMsgButton: {
+      fontWeight: 400,
+      textTransform: 'none',
+      fontSize: '24px',
+      '@media (min-width:600px)': {
+        fontSize: '18px',
+      },
     },
-    overline: {
-      fontStyle: 'light',
-      fontWeight: 300,
-      fontSize: '14px',
+    Tabs: {
+      fontWeight: 400,
+      fontSize: '24px',
     },
   },
 })
