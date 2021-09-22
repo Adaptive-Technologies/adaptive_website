@@ -11,20 +11,21 @@ import { Menu } from '@material-ui/icons'
 import useStyles from '../../theme/views/navbar.theme'
 import Adaptive_logo from '../../assets/images/Adaptive_logo_WHITE_PINK.png'
 import navbarHelper from '../../modules/navbarHelper'
+import theme from '../../theme/theme'
 
 const Navbar = () => {
-  const mobile = useMediaQuery('(max-width:1280px)')
+  const isMobile = useMediaQuery(theme.breakpoints.values.lg)
   const classes = useStyles()
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const [tabs, setTabs] = useState()
+  const [tabs, setTabs] = useState([])
 
   useEffect(() => {
-    setTabs(navbarHelper.getTabs(mobile))
-  }, [mobile])
+    setTabs(navbarHelper.buildTabs(isMobile))
+  }, [isMobile])
 
   return (
     <>
-      {mobile ? (
+      {isMobile ? (
         <Box className={classes.section}>
           <Box data-cy='navbar' className={classes.container}>
             <CardMedia
@@ -34,7 +35,7 @@ const Navbar = () => {
               data-cy='adaptive-logo'
             />
             <SwipeableDrawer
-              PaperProps={{className: classes.drawer}}
+              PaperProps={{ className: classes.drawer }}
               anchor='right'
               open={drawerOpen}
               onClose={() => setDrawerOpen(false)}
@@ -52,7 +53,7 @@ const Navbar = () => {
         <Box className={classes.section}>
           <Box data-cy='navbar' className={classes.container}>
             <Grid item container lg={5} className={classes.tabsLeft}>
-              {tabs?.leftTabs}
+              {tabs.slice(0, 3)}
             </Grid>
             <Grid item container lg={2} className={classes.logoBox}>
               <CardMedia
@@ -63,7 +64,7 @@ const Navbar = () => {
               />
             </Grid>
             <Grid item container lg={5} className={classes.tabsRight}>
-              {tabs?.rightTabs}
+              {tabs.slice(3, 5)}
             </Grid>
           </Box>
         </Box>
