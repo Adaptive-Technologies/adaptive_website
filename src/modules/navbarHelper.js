@@ -1,4 +1,4 @@
-import CustomButton from '../components/CustomButton';
+import NavButton from '../components/navigation/NavButton';
 import tabs from '../assets/data/tabs';
 import NavTab from '../components/navigation/NavTab';
 
@@ -14,10 +14,10 @@ const navbarHelper = {
     }
 
     const tabListLeft = tabs.Left.map((tab) => {
-      return <CustomButton name={tab.name} label={tab.label} />;
+      return <NavButton name={tab.name} label={tab.label} />;
     });
     const tabListRight = tabs.Right.map((tab) => {
-      return <CustomButton name={tab.name} label={tab.label} />;
+      return <NavButton name={tab.name} label={tab.label} />;
     });
 
     return { tabListLeft, tabListRight };
