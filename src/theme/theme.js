@@ -1,4 +1,4 @@
-import { createTheme } from '@material-ui/core/styles'
+import { createTheme } from '@mui/material/styles'
 import palette from './palette.theme'
 
 const theme = createTheme({
@@ -8,6 +8,7 @@ const theme = createTheme({
     h1: {
       fontStyle: 'regular',
       fontWeight: 400,
+      fontSize: '60px',
     },
     h2: {
       fontStyle: 'regular',

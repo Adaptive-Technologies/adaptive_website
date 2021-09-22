@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { ThemeProvider } from '@material-ui/styles'
-import { CssBaseline } from '@material-ui/core'
+import { ThemeProvider } from '@mui/system'
+import CssBaseline from '@mui/material/CssBaseline'
 import theme from './theme/theme'
 import App from './components/App'
 

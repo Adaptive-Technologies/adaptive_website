@@ -6,8 +6,8 @@ import {
   useMediaQuery,
   SwipeableDrawer,
   IconButton,
-} from '@material-ui/core'
-import { Menu } from '@material-ui/icons'
+} from '@mui/material'
+import MenuIcon from '@mui/icons-material/Menu';
 import useStyles from '../../theme/views/navbar.theme'
 import Adaptive_logo from '../../assets/images/Adaptive_logo_WHITE_PINK.png'
 import navbarHelper from '../../modules/navbarHelper'
@@ -44,7 +44,7 @@ const Navbar = () => {
           <IconButton
             className={classes.menuButton}
             onClick={() => setDrawerOpen(true)}>
-            <Menu />
+            <MenuIcon />
           </IconButton>
         </Box>
       ) : (
