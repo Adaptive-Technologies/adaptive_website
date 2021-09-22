@@ -27,13 +27,18 @@ const useStyles = makeStyles((theme) => ({
       height: '60px',
     },
   },
+  drawer: {
+    backgroundColor: '#250022',
+    color: '#fff',
+    padding: '8px 16px',
+  },
   navTab: {
     color: '#fff',
     minWidth: '0px',
   },
   menuButton: {
     color: '#fff',
-    marginLeft: 'auto'
+    marginLeft: 'auto',
   },
   tabsLeft: {
     paddingTop: '10px',

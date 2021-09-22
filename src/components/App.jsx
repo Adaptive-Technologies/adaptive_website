@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box } from '@material-ui/core'
 import Navbar from '../components/navigation/Navbar'
-import useStyles from '../theme/body.theme'
+import useStyles from '../theme/views/body.theme'
 
 const App = () => {
   const classes = useStyles()

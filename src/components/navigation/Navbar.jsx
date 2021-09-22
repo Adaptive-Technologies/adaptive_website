@@ -8,7 +8,7 @@ import {
   IconButton,
 } from '@material-ui/core'
 import { Menu } from '@material-ui/icons'
-import useStyles from '../../theme/navbar.theme'
+import useStyles from '../../theme/views/navbar.theme'
 import Adaptive_logo from '../../assets/images/Adaptive_logo_WHITE_PINK.png'
 import navbarHelper from '../../modules/navbarHelper'
 
@@ -34,13 +34,16 @@ const Navbar = () => {
               data-cy='adaptive-logo'
             />
             <SwipeableDrawer
-              anchor='top'
+              PaperProps={{className: classes.drawer}}
+              anchor='right'
               open={drawerOpen}
               onClose={() => setDrawerOpen(false)}
               onOpen={() => setDrawerOpen(true)}>
               {tabs}
             </SwipeableDrawer>
-            <IconButton className={classes.menuButton} onClick={() => setDrawerOpen(true)}>
+            <IconButton
+              className={classes.menuButton}
+              onClick={() => setDrawerOpen(true)}>
               <Menu />
             </IconButton>
           </Box>
