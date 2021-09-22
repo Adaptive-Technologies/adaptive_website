@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    backgroundColor: '#250022',
+    backgroundColor: theme.palette.background.default,
     width: '100%',
   },
   container: {
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   drawer: {
-    backgroundColor: '#250022',
+    backgroundColor: theme.palette.background.default,
     color: '#fff',
     padding: '8px 16px',
   },

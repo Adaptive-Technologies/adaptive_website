@@ -1,5 +1,5 @@
 import { createTheme } from '@material-ui/core/styles'
-import palette from './palette.theme.js'
+import palette from './palette.theme'
 
 const theme = createTheme({
   palette: palette,
