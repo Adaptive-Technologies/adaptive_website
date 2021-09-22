@@ -21,7 +21,7 @@ const palette = {
   },
   background: {
     default: '#250022',
-    contrastText: '#fff'
+    // contrastText: '#fff'
   },
   text: {
     primary: '#fff',

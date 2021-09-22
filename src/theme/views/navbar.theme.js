@@ -29,15 +29,14 @@ const useStyles = makeStyles((theme) => ({
   },
   drawer: {
     backgroundColor: theme.palette.background.default,
-    color: '#fff',
+    color: theme.palette.text.primary,
     padding: '8px 16px',
   },
   navTab: {
-    color: '#fff',
     minWidth: '0px',
   },
   menuButton: {
-    color: '#fff',
+    color: theme.palette.text.primary,
     marginLeft: 'auto',
   },
   tabsLeft: {

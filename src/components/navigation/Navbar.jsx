@@ -7,7 +7,7 @@ import {
   SwipeableDrawer,
   IconButton,
 } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from '@mui/icons-material/Menu'
 import useStyles from '../../theme/views/navbar.theme'
 import Adaptive_logo from '../../assets/images/Adaptive_logo_WHITE_PINK.png'
 import navbarHelper from '../../modules/navbarHelper'
@@ -32,6 +32,7 @@ const Navbar = () => {
             component='img'
             image={Adaptive_logo}
             data-cy='adaptive-logo'
+            variant='contained'
           />
           <SwipeableDrawer
             PaperProps={{ className: classes.drawer }}
@@ -58,6 +59,7 @@ const Navbar = () => {
               component='img'
               image={Adaptive_logo}
               data-cy='adaptive-logo'
+              variant='contained'
             />
           </Grid>
           <Grid item container lg={5} className={classes.tabsRight}>

@@ -3,6 +3,26 @@ import palette from './palette.theme'
 
 const theme = createTheme({
   palette: palette,
+  components: {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          color: '#fff',
+          fontSize: '24px',
+        },
+      },
+    },
+    MuiCardMedia: {
+      variants: [
+        {
+          props: { variant: 'contained' },
+          style: {
+            objectFit: 'contain',
+          },
+        },
+      ],
+    },
+  },
   typography: {
     fontFamily: ['video', 'serif'].join(','),
     fontStyle: 'normal',
