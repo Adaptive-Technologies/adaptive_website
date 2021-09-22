@@ -4,7 +4,7 @@ import { Tab, Tabs } from '@material-ui/core';
 const NavTab = ({ name, label, index }) => {
   return (
     <Tabs>
-      <Tab data-cy={name} label={`< ${label} />`} value={index} />
+      <Tab data-cy={name} label={`< ${label} />`} />
     </Tabs>
   );
 };

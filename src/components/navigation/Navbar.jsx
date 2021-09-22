@@ -20,7 +20,6 @@ const Navbar = () => {
 
   useEffect(() => {
     let response = navbarHelper.navigation(mobile);
-    debugger
     setLeft(response.tabListLeft);
     setRight(response.tabListRight);
     setMobileView(response);
