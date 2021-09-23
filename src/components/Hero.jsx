@@ -6,6 +6,7 @@ import heroVideo from '../assets/videos/HeroWatermarkedCompressed.mp4'
 
 const useStyles = makeStyles(() => ({
   section: {
+    position: 'relative',
     height: '80vh',
     width: '100%',
     objectFit: 'cover',

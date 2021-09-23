@@ -4,9 +4,6 @@ const useStyles = makeStyles((theme) => ({
   section: {
     backgroundColor: theme.palette.background.default,
     width: '100%',
-    position: '-webkit-sticky',
-    position: 'sticky',
-    top: '200',
   },
   container: {
     display: 'flex',
