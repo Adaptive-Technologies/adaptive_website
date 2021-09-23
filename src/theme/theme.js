@@ -35,6 +35,7 @@ const theme = createTheme({
             color: 'white',
             height: 48,
             padding: '0 30px',
+            textTransform: 'uppercase',
           },
         },
       ],

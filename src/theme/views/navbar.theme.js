@@ -9,8 +9,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    maxWidth: theme.breakpoints.values.lg,
+    justifyContent: 'space-evenly',
     margin: 'auto',
+    maxWidth: '100%',
     height: '30px',
     padding: '32px 16px',
     [theme.breakpoints.up('lg')]: {
