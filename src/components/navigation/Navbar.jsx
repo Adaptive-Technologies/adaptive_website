@@ -20,7 +20,7 @@ const Navbar = () => {
   const [tabs, setTabs] = useState([])
 
   useEffect(() => {
-    setTabs(navbarHelper.buildTabs(isMobile))
+    setTabs(navbarHelper.buildTabs())
   }, [isMobile])
 
   return (

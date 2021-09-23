@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import sizes from '../support/index'
 import TestServices from '../support/testServices'
 

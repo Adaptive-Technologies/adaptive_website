@@ -2,7 +2,7 @@ import React from 'react'
 import { Tab, Tabs } from '@mui/material'
 import navbarStyles from '../../../theme/views/navbar.theme'
 
-const NavButton = ({ name, label }) => {
+const NavTab = ({ name, label }) => {
   const classes = navbarStyles()
 
   return (
@@ -12,4 +12,4 @@ const NavButton = ({ name, label }) => {
   )
 }
 
-export default NavButton
+export default NavTab
