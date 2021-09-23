@@ -7,7 +7,7 @@ const NavButton = ({ name, label }) => {
 
   return (
     <Tabs value={false}>
-      <Tab className={classes.navTab} data-cy={name} label={`< ${label}  />`} />
+      <Tab className={classes.navTab} data-cy={name} label={`< ${label} />`} />
     </Tabs>
   )
 }

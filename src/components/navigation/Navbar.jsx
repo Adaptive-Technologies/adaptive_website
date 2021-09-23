@@ -35,6 +35,7 @@ const Navbar = () => {
             variant='contained'
           />
           <SwipeableDrawer
+            data-cy='navbar'
             PaperProps={{ className: classes.drawer }}
             anchor='right'
             open={drawerOpen}
@@ -45,7 +46,7 @@ const Navbar = () => {
           <IconButton
             className={classes.menuButton}
             onClick={() => setDrawerOpen(true)}>
-            <MenuIcon />
+            <MenuIcon data-cy='hamburger-menu' />
           </IconButton>
         </Box>
       ) : (
