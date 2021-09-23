@@ -10,6 +10,7 @@ const theme = createTheme({
           color: '#fff',
           fontSize: '24px',
           textTransform: 'uppercase',
+          letterSpacing: '-0.48px',
         },
       },
     },
@@ -54,6 +55,7 @@ const theme = createTheme({
     h2: {
       fontWeight: 400,
       fontSize: '48px',
+      letterSpacing: '-0.96px',
       '@media (max-width:800px)': {
         fontSize: '30px',
       },
@@ -94,6 +96,7 @@ const theme = createTheme({
     body2: {
       fontWeight: 400,
       fontSize: '18px',
+      lineHeight: '30px',
       fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
     },
     button: {
@@ -115,6 +118,7 @@ const theme = createTheme({
     Tabs: {
       fontWeight: 400,
       fontSize: '24px',
+      letterSpacing: '-0.48px',
     },
   },
 })
