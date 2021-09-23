@@ -2,6 +2,7 @@ import React from 'react'
 import { Box } from '@mui/material'
 import Navbar from '../components/navigation/Navbar'
 import useStyles from '../theme/views/body.theme'
+import ContactUs from '../components/ContactUs'
 
 const App = () => {
   const classes = useStyles()
@@ -9,6 +10,8 @@ const App = () => {
     <>
       <Box className={classes.body}>
         <Navbar />
+
+        <ContactUs />
       </Box>
     </>
   )
