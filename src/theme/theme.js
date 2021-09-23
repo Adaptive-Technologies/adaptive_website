@@ -3,7 +3,20 @@ import palette from './palette.theme'
 
 const theme = createTheme({
   palette: palette,
+
   components: {
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          margin: '1rem 0',
+        },
+      },
+      defaultProps: {
+        variant: 'outlined',
+        fullWidth: true,
+        minRows: 4,
+      },
+    },
     MuiTab: {
       styleOverrides: {
         root: {
@@ -26,7 +39,7 @@ const theme = createTheme({
     MuiButton: {
       variants: [
         {
-          props: { special: 'gradiant' },
+          props: { special: 'gradient' },
           style: {
             background: 'linear-gradient(45deg, #4ba9ff 30%, #f84b9b 90%)',
             border: 0,
