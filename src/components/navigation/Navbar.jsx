@@ -14,7 +14,7 @@ import navbarHelper from '../../modules/navbarHelper'
 import theme from '../../theme/theme'
 
 const Navbar = () => {
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'))
+  const isMobile = useMediaQuery(theme.breakpoints.down('lg'))
   const classes = useStyles()
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [tabs, setTabs] = useState([])
