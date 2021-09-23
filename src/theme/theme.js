@@ -41,6 +41,21 @@ const theme = createTheme({
         },
       ],
     },
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          color: '#fff',
+          fontSize: '3rem',
+        },
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: {
+          flexDirection: 'column',
+        },
+      },
+    },
   },
   typography: {
     fontFamily: ['video', 'serif'].join(','),
