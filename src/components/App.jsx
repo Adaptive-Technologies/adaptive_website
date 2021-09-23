@@ -9,6 +9,9 @@ const App = () => {
     <>
       <Box className={classes.body}>
         <Navbar />
+
+
+        <ContactUs />
       </Box>
     </>
   )
