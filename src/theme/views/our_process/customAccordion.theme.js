@@ -14,12 +14,12 @@ const useStyles = makeStyles((theme) => ({
       'transparent radial-gradient(closest-side at 50% 50%, #F84B9B 0%, #7C264E 100%) 0% 0% no-repeat padding-box',
 
     [theme.breakpoints.up('md')]: {
-      padding: '100px 20%',
-      minHeight: '246px',
+      padding: '40px 20%',
+      minHeight: '200px',
       maxHeight: 'auto',
     },
     [theme.breakpoints.up('lg')]: {
-      padding: '100px 27%',
+      padding: '40px 27%',
     },
   },
   accordion2: {
@@ -34,14 +34,14 @@ const useStyles = makeStyles((theme) => ({
     background:
       'transparent radial-gradient(closest-side at 50% 50%, #D868C1 0%, #6C3461 100%) 0% 0% no-repeat padding-box',
 
-    [theme.breakpoints.up('md')]: {
-      padding: '100px 20%',
-      minHeight: '246px',
-      maxHeight: 'auto',
-    },
-    [theme.breakpoints.up('lg')]: {
-      padding: '100px 27%',
-    },
+      [theme.breakpoints.up('md')]: {
+        padding: '40px 20%',
+        minHeight: '200px',
+        maxHeight: 'auto',
+      },
+      [theme.breakpoints.up('lg')]: {
+        padding: '40px 27%',
+      },
   },
   accordion3: {
     display: 'flex',
@@ -55,14 +55,14 @@ const useStyles = makeStyles((theme) => ({
     background:
       'transparent radial-gradient(closest-side at 50% 50%, #A581DD 0%, #53416F 100%) 0% 0% no-repeat padding-box',
 
-    [theme.breakpoints.up('md')]: {
-      padding: '100px 20%',
-      minHeight: '246px',
-      maxHeight: 'auto',
-    },
-    [theme.breakpoints.up('lg')]: {
-      padding: '100px 27%',
-    },
+      [theme.breakpoints.up('md')]: {
+        padding: '40px 20%',
+        minHeight: '200px',
+        maxHeight: 'auto',
+      },
+      [theme.breakpoints.up('lg')]: {
+        padding: '40px 27%',
+      },
   },
   accordion4: {
     display: 'flex',
@@ -76,14 +76,14 @@ const useStyles = makeStyles((theme) => ({
     background:
       'transparent radial-gradient(closest-side at 50% 50%, #4BA9FF 0%, #265580 100%) 0% 0% no-repeat padding-box',
 
-    [theme.breakpoints.up('md')]: {
-      padding: '100px 20%',
-      minHeight: '246px',
-      maxHeight: 'auto',
-    },
-    [theme.breakpoints.up('lg')]: {
-      padding: '100px 27%',
-    },
+      [theme.breakpoints.up('md')]: {
+        padding: '40px 20%',
+        minHeight: '200px',
+        maxHeight: 'auto',
+      },
+      [theme.breakpoints.up('lg')]: {
+        padding: '40px 27%',
+      },
   },
   icon: {
     color: theme.palette.text.primary,

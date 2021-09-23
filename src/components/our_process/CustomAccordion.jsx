@@ -76,6 +76,64 @@ const CustomAccordion = () => {
           </Typography>
         </AccordionDetails>
       </Accordion>
+      <Accordion
+        square
+        disableGutters
+        elevation={0}
+        expanded={expanded === 'accordion3'}
+        onChange={handleChange('accordion3')}
+        className={classes.accordion3}>
+        <AccordionSummary
+          expandIcon={<KeyboardArrowDownIcon className={classes.icon} />}>
+          <Typography variant='h3' className={classes.header}>
+            3. Developing
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails className={classes.accordionDetails}>
+          <Typography variant='body2' className={classes.bodyFirst}>
+            First we arrange a meeting with you, in person or over the web.
+          </Typography>
+          <Typography variant='body2' className={classes.body}>
+            During the meeting we want to get to know you better and what you
+            want from you application. Once we have gotten an idea of what you
+            want and who you are, we will go away and work on the LoFi’s and
+            arrange a second meeting for delivery.
+          </Typography>
+          <Typography variant='body2' className={classes.body}>
+            Once you’re happy with the LoFi’s we have produce we can move
+            forward to the next phase.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        square
+        disableGutters
+        elevation={0}
+        expanded={expanded === 'accordion4'}
+        onChange={handleChange('accordion4')}
+        className={classes.accordion4}>
+        <AccordionSummary
+          expandIcon={<KeyboardArrowDownIcon className={classes.icon} />}>
+          <Typography variant='h3' className={classes.header}>
+            4. Delivery
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails className={classes.accordionDetails}>
+          <Typography variant='body2' className={classes.bodyFirst}>
+            First we arrange a meeting with you, in person or over the web.
+          </Typography>
+          <Typography variant='body2' className={classes.body}>
+            During the meeting we want to get to know you better and what you
+            want from you application. Once we have gotten an idea of what you
+            want and who you are, we will go away and work on the LoFi’s and
+            arrange a second meeting for delivery.
+          </Typography>
+          <Typography variant='body2' className={classes.body}>
+            Once you’re happy with the LoFi’s we have produce we can move
+            forward to the next phase.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
     </>
   )
 }
