@@ -28,7 +28,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   drawer: {
-    backgroundColor: theme.palette.background.default,
     color: theme.palette.text.primary,
     padding: '8px 16px',
   },

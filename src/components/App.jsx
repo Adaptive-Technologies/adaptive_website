@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import Navbar from '../components/navigation/Navbar'
 import useStyles from '../theme/views/body.theme'
 
@@ -9,6 +9,7 @@ const App = () => {
     <>
       <Box className={classes.body}>
         <Navbar />
+        <Button variant="contained" special='gradiant' >borgit</Button>
       </Box>
     </>
   )

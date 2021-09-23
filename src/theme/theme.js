@@ -9,6 +9,7 @@ const theme = createTheme({
         root: {
           color: '#fff',
           fontSize: '24px',
+          textTransform: 'uppercase',
         },
       },
     },
@@ -18,6 +19,22 @@ const theme = createTheme({
           props: { variant: 'contained' },
           style: {
             objectFit: 'contain',
+          },
+        },
+      ],
+    },
+    MuiButton: {
+      variants: [
+        {
+          props: { special: 'gradiant' },
+          style: {
+            background: 'linear-gradient(45deg, #4ba9ff 30%, #f84b9b 90%)',
+            border: 0,
+            borderRadius: 30,
+            boxShadow: 'inset 0 3px 5px 2px rgba(255, 105, 135, .3)',
+            color: 'white',
+            height: 48,
+            padding: '0 30px',
           },
         },
       ],
