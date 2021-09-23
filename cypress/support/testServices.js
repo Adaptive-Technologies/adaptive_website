@@ -10,7 +10,6 @@ const TestServices = {
   },
 
   sizeCase(size) {
-    debugger
     switch (size) {
       case 'macbook-16':
         cy.get('[data-cy=navbar]').should('exist')
