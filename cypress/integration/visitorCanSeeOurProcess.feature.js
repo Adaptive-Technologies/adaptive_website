@@ -8,34 +8,37 @@ describe('Vistor can see our process', () => {
       beforeEach(() => {
         TestServices.sizeParams(size)
         cy.visit('/')
-        TestServices.sizeCase(size)
       })
 
-      it('is expected to show our process section ', () => {
-        cy.get('[data-cy=step-0]').within(() => {
-          cy.get('[data-cy=our-process]').should('contain', '< OUR PROCESS />')
-          cy.get('[data-cy=body-1]').should(
-            'contain.text',
-            'Here at Adaptive Labs Nordics we work with the vision that everything is changing and we are here to help you adapt to these changes.'
-          )
-          cy.get('[data-cy=body-2]').should(
-            'contain.text',
-            'Below you can read about our 4 step plan in our process'
-          )
+      describe('is expected to show our process section ', () => {
+        it('is expected to show our process', () => {
+          cy.get('[data-cy=step-0]').within(() => {
+            cy.get('[data-cy=our-process]').should('contain', 'borgir')
+            cy.get('[data-cy=body-1]').should(
+              'contain.text',
+              'Here at Adaptive Labs Nordics we work with the vision that everything is changing and we are here to help you adapt to these changes.'
+            )
+            cy.get('[data-cy=body-2]').should(
+              'contain.text',
+              'Below you can read about our 4 step plan in our process'
+            )
+          })
         })
         it('is expected to show meeting you', () => {
           cy.get('[data-cy=step-1]').within(() => {
             cy.get('[data-cy=heading]').should('contain', '1. Meeting You')
-            cy.get('[data-cy=body-1]').should('not.be.visible')
-            cy.get('[data-cy=body-2]').should('not.be.visible')
-            cy.get('[data-cy=body-3]').should('not.be.visible')
+            cy.get('[data-cy=body-1]').should('not.exist')
+            cy.get('[data-cy=body-2]').should('not.exist')
+            cy.get('[data-cy=body-3]').should('not.exist')
           })
-          cy.get('[data.cy=step-1]').click()
+          cy.get('[data-cy=step-1]').click()
           cy.get('[data-cy=step-1]').within(() => {
             cy.get('[data-cy=heading]').should('contain', '1. Meeting You')
+          })
+          cy.get('[data-cy=accordionDetails-1]').within(() => {
             cy.get('[data-cy=body-1]').should(
               'contain.text',
-              'First we arrange a meeting with you, in person or over the web. '
+              'First we arrange a meeting with you, in person or over the web.'
             )
             cy.get('[data-cy=body-2]').should(
               'contain.text',
@@ -43,21 +46,23 @@ describe('Vistor can see our process', () => {
             )
             cy.get('[data-cy=body-3]').should(
               'contain.text',
-              'Once you’re happy with the LoFi’s we have produce we can move forward to the next phase. '
+              'Once you’re happy with the LoFi’s we'
             )
           })
         })
         it('is expected to show design phase', () => {
           cy.get('[data-cy=step-2]').within(() => {
             cy.get('[data-cy=heading]').should('contain', '2. Design Phase')
-            cy.get('[data-cy=body-1]').should('not.be.visible')
-            cy.get('[data-cy=body-2]').should('not.be.visible')
-            cy.get('[data-cy=body-3]').should('not.be.visible')
-            cy.get('[data-cy=body-4]').should('not.be.visible')
+            cy.get('[data-cy=body-1]').should('not.exist')
+            cy.get('[data-cy=body-2]').should('not.exist')
+            cy.get('[data-cy=body-3]').should('not.exist')
+            cy.get('[data-cy=body-4]').should('not.exist')
           })
-          cy.get('[data.cy=step-2]').click()
+          cy.get('[data-cy=step-2]').click()
           cy.get('[data-cy=step-2]').within(() => {
             cy.get('[data-cy=heading]').should('contain', '2. Design Phase')
+          })
+          cy.get('[data-cy=accordionDetails-2]').within(() => {
             cy.get('[data-cy=body-1]').should(
               'contain.text',
               'During this phase we will deal with HiFi’s and technical analysis.'
@@ -79,14 +84,16 @@ describe('Vistor can see our process', () => {
         it('is expected to show Developing phase', () => {
           cy.get('[data-cy=step-3]').within(() => {
             cy.get('[data-cy=heading]').should('contain', '3. Developing')
-            cy.get('[data-cy=body-1]').should('not.be.visible')
-            cy.get('[data-cy=body-2]').should('not.be.visible')
-            cy.get('[data-cy=body-3]').should('not.be.visible')
-            cy.get('[data-cy=body-4]').should('not.be.visible')
+            cy.get('[data-cy=body-1]').should('not.exist')
+            cy.get('[data-cy=body-2]').should('not.exist')
+            cy.get('[data-cy=body-3]').should('not.exist')
+            cy.get('[data-cy=body-4]').should('not.exist')
           })
-          cy.get('[data.cy=step-3]').click()
+          cy.get('[data-cy=step-3]').click()
           cy.get('[data-cy=step-3]').within(() => {
             cy.get('[data-cy=heading]').should('contain', '3. Developing')
+          })
+          cy.get('[data-cy=accordionDetails-3]').within(() => {
             cy.get('[data-cy=body-1]').should(
               'contain.text',
               'Here is where those designs become a reality. We work from the HiFi’s we agreed on'
@@ -108,12 +115,14 @@ describe('Vistor can see our process', () => {
         it('is expected to show Delivery phase', () => {
           cy.get('[data-cy=step-4]').within(() => {
             cy.get('[data-cy=heading]').should('contain', '4. Delivery')
-            cy.get('[data-cy=body-1]').should('not.be.visible')
-            cy.get('[data-cy=body-2]').should('not.be.visible')
+            cy.get('[data-cy=body-1]').should('not.exist')
+            cy.get('[data-cy=body-2]').should('not.exist')
           })
-          cy.get('[data.cy=step-4]').click()
+          cy.get('[data-cy=step-4]').click()
           cy.get('[data-cy=step-4]').within(() => {
             cy.get('[data-cy=heading]').should('contain', '4. Delivery')
+          })
+          cy.get('[data-cy=accordionDetails-4]').within(() => {
             cy.get('[data-cy=body-1]').should(
               'contain.text',
               'The time has come for us to deliver the final application'

@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
     padding: '20% 40px',
     background:
       'transparent radial-gradient(closest-side at 50% 50%, #F84B9B 0%, #7C264E 100%) 0% 0% no-repeat padding-box',
-
     [theme.breakpoints.up('md')]: {
       padding: '50px 20%',
     },

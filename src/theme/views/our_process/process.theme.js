@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
   header: {
     paddingBottom: '36px',
+    textTransform: 'uppercase',
   },
   body: {
     alignSelf: 'flex-start',
