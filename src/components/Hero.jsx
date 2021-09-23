@@ -1,8 +1,6 @@
-import React from 'react'
-import ReactPlayer from 'react-player'
+import React, { Suspense } from 'react'
 import { Box, Button, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
-import heroVideo from '../assets/videos/HeroWatermarkedCompressed.mp4'
 
 const useStyles = makeStyles(() => ({
   section: {
@@ -26,16 +24,21 @@ const useStyles = makeStyles(() => ({
 
 const Hero = () => {
   const classes = useStyles()
+  const BackgroundVideo = React.lazy(() => import('./hero/BackgroundVideo'))
+  const BackgroundImage = React.lazy(() => import('./hero/BackgroundImage'))
+
+  const backgroundImage = (
+    <Suspense fallback={<div></div>}>
+      <BackgroundImage />
+    </Suspense>
+  )
+
   return (
     <Box className={classes.section}>
-      <ReactPlayer
-        url={heroVideo}
-        playing
-        loop
-        muted
-        width='100%'
-        height='100%'
-      />
+      <Suspense fallback={backgroundImage}>
+        <BackgroundVideo />
+      </Suspense>
+
       <Box className={classes.overlay} component='div'>
         <Typography>Slogan</Typography>
         <Button>Contact</Button>
