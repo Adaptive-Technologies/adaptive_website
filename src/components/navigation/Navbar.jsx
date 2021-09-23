@@ -51,10 +51,10 @@ const Navbar = () => {
         </Box>
       ) : (
         <Box data-cy='navbar' className={classes.container}>
-          <Grid item container lg={5} className={classes.tabsLeft}>
+          <Grid item container lg={6} className={classes.tabsLeft}>
             {tabs.slice(0, 3)}
           </Grid>
-          <Grid item container lg={2} className={classes.logoBox}>
+          <Grid item container lg={1} className={classes.logoBox}>
             <CardMedia
               className={classes.logo}
               component='img'
@@ -63,7 +63,7 @@ const Navbar = () => {
               variant='contained'
             />
           </Grid>
-          <Grid item container lg={5} className={classes.tabsRight}>
+          <Grid item container lg={4} className={classes.tabsRight}>
             {tabs.slice(3, 5)}
           </Grid>
         </Box>
