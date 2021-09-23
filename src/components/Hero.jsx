@@ -26,10 +26,12 @@ const Hero = () => {
         className={classes.overlay}
         direction='column'
         special='center'>
-        <Typography variant='h1'>
+        <Typography data-cy='slogan' variant='h1'>
           Adaptive labs adapts your business to the future
         </Typography>
-        <Button special='gradient'>{'{ Adapt your business }'}</Button>
+        <Button data-cy='contact-us-btn' special='gradient'>
+          {'{ Adapt your business }'}
+        </Button>
       </Grid>
     </Box>
   )

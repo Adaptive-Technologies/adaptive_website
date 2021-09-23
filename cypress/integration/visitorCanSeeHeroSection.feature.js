@@ -11,7 +11,6 @@ describe('Visitor can see hero section', () => {
       });
 
       it('is expected to have correct contents', () => {
-        cy.get('[data-cy=hero-bg').should('be.visible');
         cy.get('[data-cy=slogan').should(
           'contain.text',
           'Adaptive labs adapts your business to the future'
