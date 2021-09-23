@@ -1,10 +1,16 @@
 import React from 'react'
+import { Box } from '@mui/material'
+import Navbar from '../components/navigation/Navbar'
+import useStyles from '../theme/views/body.theme'
 
 const App = () => {
+  const classes = useStyles()
   return (
-    <div data-cy='title'>
-      Hello World! Nice to see you.
-    </div>
+    <>
+      <Box className={classes.body}>
+        <Navbar />
+      </Box>
+    </>
   )
 }
 
