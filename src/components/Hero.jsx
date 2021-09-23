@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react'
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button, Grid, Typography } from '@mui/material'
 import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles(() => ({
@@ -18,7 +18,11 @@ const useStyles = makeStyles(() => ({
     left: 0,
     width: '100%',
     height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+  },
+  slogan: {
+    //padding: '2rem',
+    //textAlign: 'center',
   },
   backgroundGradient: {
     width: '100%',
@@ -46,10 +50,17 @@ const Hero = () => {
         <BackgroundVideo />
       </Suspense>
 
-      <Box className={classes.overlay} component='div'>
-        <Typography>Slogan</Typography>
-        <Button>Contact</Button>
-      </Box>
+      <Grid
+        container
+        className={classes.overlay}
+        direction='column'
+        alignItems='center'
+        justifyContent='center'>
+        <Typography className={classes.slogan} variant='h1'>
+          Adaptive labs adapts your business to the future
+        </Typography>
+        <Button special='gradient'>{'{ Adapt your business }'}</Button>
+      </Grid>
     </Box>
   )
 }

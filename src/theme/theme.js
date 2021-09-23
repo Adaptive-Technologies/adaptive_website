@@ -26,15 +26,15 @@ const theme = createTheme({
     MuiButton: {
       variants: [
         {
-          props: { special: 'gradiant' },
+          props: { special: 'gradient' },
           style: {
             background: 'linear-gradient(45deg, #4ba9ff 30%, #f84b9b 90%)',
             border: 0,
             borderRadius: 30,
             boxShadow: 'inset 0 3px 5px 2px rgba(255, 105, 135, .3)',
             color: 'white',
-            height: 48,
-            padding: '0 30px',
+            //height: 48,
+            padding: '8px 30px',
             textTransform: 'uppercase',
           },
         },
@@ -47,9 +47,14 @@ const theme = createTheme({
     h1: {
       fontWeight: 400,
       fontSize: '60px',
-      '@media (max-width:800px)': {
+      '@media (max-width:1280px)': {
+        fontSize: '48px',
+      },
+      '@media (max-width:620px)': {
         fontSize: '36px',
       },
+      padding: '2rem',
+      textAlign: 'center',
     },
     h2: {
       fontWeight: 400,
@@ -99,8 +104,8 @@ const theme = createTheme({
     button: {
       fontWeight: 400,
       textTransform: 'none',
-      fontSize: '36px',
-      '@media (min-width:600px)': {
+      fontSize: '24px',
+      '@media (max-width:1280px)': {
         fontSize: '18px',
       },
     },
