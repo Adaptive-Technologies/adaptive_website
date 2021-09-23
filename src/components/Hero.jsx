@@ -20,6 +20,11 @@ const useStyles = makeStyles(() => ({
     height: '100%',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
+  backgroundGradient: {
+    width: '100%',
+    height: '100%',
+    background: 'linear-gradient(90deg, #a43072 30%,  #574f8d 70%)',
+  },
 }))
 
 const Hero = () => {
@@ -27,8 +32,10 @@ const Hero = () => {
   const BackgroundVideo = React.lazy(() => import('./hero/BackgroundVideo'))
   const BackgroundImage = React.lazy(() => import('./hero/BackgroundImage'))
 
+  const backgroundGradient = <Box className={classes.backgroundGradient} />
+
   const backgroundImage = (
-    <Suspense fallback={<div></div>}>
+    <Suspense fallback={backgroundGradient}>
       <BackgroundImage />
     </Suspense>
   )
