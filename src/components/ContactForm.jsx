@@ -2,11 +2,9 @@ import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { controlProps } from '../modules/adaptiveHelper'
-import { Typography, TextField, Button, Box } from '@mui/material'
-import useStyles from '../theme/views/contactUs.theme'
+import { TextField, Button } from '@mui/material'
 
 const ContactForm = () => {
-  const classes = useStyles()
   const shape = {
     name: yup.string().required,
     email: yup.string().required,
@@ -26,12 +24,25 @@ const ContactForm = () => {
     alert(JSON.stringify(formData))
   }
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <Typography variant='h3'>Send us a message</Typography>
-      <TextField {...controlProps(register, errors, labels[0])} />
-      <TextField {...controlProps(register, errors, labels[1])} />
-      <TextField {...controlProps(register, errors, labels[2])} multiline />
-      <Button variant='contained' fullWidth type='submit'>
+    <form onSubmit={handleSubmit(onSubmit)} data-cy='contact-us-form'>
+      <TextField
+        data-cy='contact-us-form-name'
+        {...controlProps(register, errors, labels[0])}
+      />
+      <TextField
+        data-cy='contact-us-form-email'
+        {...controlProps(register, errors, labels[1])}
+      />
+      <TextField
+        data-cy='contact-us-form-phone'
+        {...controlProps(register, errors, labels[2])}
+      />
+      <TextField
+        data-cy='contact-us-form-message'
+        {...controlProps(register, errors, labels[3])}
+        multiline
+      />
+      <Button special='gradient' fullWidth type='submit'>
         Submit
       </Button>
     </form>
