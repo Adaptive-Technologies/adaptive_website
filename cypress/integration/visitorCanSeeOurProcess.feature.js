@@ -13,7 +13,7 @@ describe('Vistor can see our process', () => {
       describe('is expected to show our process section ', () => {
         it('is expected to show our process', () => {
           cy.get('[data-cy=step-0]').within(() => {
-            cy.get('[data-cy=our-process]').should('contain', 'borgir')
+            cy.get('[data-cy=our-process]').should('contain', '< our process />')
             cy.get('[data-cy=body-1]').should(
               'contain.text',
               'Here at Adaptive Labs Nordics we work with the vision that everything is changing and we are here to help you adapt to these changes.'

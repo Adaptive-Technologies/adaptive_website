@@ -8,9 +8,11 @@ const OurProcess = () => {
   return (
     <>
       <Box data-cy='step-0' className={classes.box}>
-        <Typography data-cy='our-process' variant='h2' className={classes.header}>
-          borgir
-         {/* {'< our process />'} */}
+        <Typography
+          data-cy='our-process'
+          variant='h2'
+          className={classes.header}>
+          {'< our process />'}
         </Typography>
         <Typography data-cy='body-1' variant='body2' className={classes.body}>
           Here at Adaptive Labs Nordics we work with the vision that everything
