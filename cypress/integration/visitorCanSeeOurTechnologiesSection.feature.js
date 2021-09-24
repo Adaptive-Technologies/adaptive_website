@@ -12,11 +12,11 @@ describe('Visitor can see technologies section', () => {
 
       it('is expected to have correct contents', () => {
         cy.get('[data-cy=technologies-section]').within(() => {
-          cy.get('[data-cy=header]').should('contain.text', '< technologies />')
+          cy.get('[data-cy=header]').should('contain.text', '< our technologies />')
           cy.get('[data-cy=technology]').should('have.length', 6)
           cy.get('[data-cy=technology]').first().within(() => {
             cy.get('[data-cy=icon]').should('be.visible')
-            cy.get('[data-cy=name]').should('contain.text', 'React')
+            cy.get('[data-cy=name]').should('contain.text', 'Cypress')
           })
         })
       })

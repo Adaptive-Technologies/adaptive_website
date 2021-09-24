@@ -71,8 +71,11 @@ const theme = createTheme({
     h2: {
       fontWeight: 400,
       fontSize: '36px',
-      '@media (max-width:800px)': {
+      '@media (max-width:520px)': {
         fontSize: '28px',
+      },
+      '@media (max-width:420px)': {
+        fontSize: '1.2rem',
       },
       padding: '2rem',
       textAlign: 'center',

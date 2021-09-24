@@ -5,12 +5,19 @@ import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles((theme) => ({
   section: {
-    padding: '32px 20%',
     minHeight: '250px',
     width: '100%',
+    padding: '32px 8px',
+    [theme.breakpoints.up('sm')]: {
+      padding: '32px 10%',
+    },
+  },
+  gridContainer: {
+    maxWidth: '1280px',
+    margin: 'auto'
   },
   technologyCard: {
-    minWidth: '100px',
+    minWidth: '80px',
     minHeight: '100px',
   },
   icon: {
@@ -53,9 +60,9 @@ const Technologies = () => {
   return (
     <Box data-cy='technologies-section' className={classes.section}>
       <Typography data-cy='header' variant='h2'>
-        {'< technologies />'}
+        {'< our technologies />'}
       </Typography>
-      <Grid container data-cy='technologies-section' direction='row'>
+      <Grid container className={classes.gridContainer} direction='row'>
         {technologies.map((tech) => {
           return technologyCard(tech.name, tech.color)
         })}
