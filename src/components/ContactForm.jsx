@@ -2,14 +2,16 @@ import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { controlProps } from '../modules/adaptiveHelper'
-import { TextField, Button } from '@mui/material'
+import { TextField, Button, Typography, Box } from '@mui/material'
+import useStyles from '../theme/views/contactUs.theme'
 
 const ContactForm = () => {
+  const classes = useStyles()
   const shape = {
-    name: yup.string().required,
-    email: yup.string().required,
-    phone: yup.number().required,
-    message: yup.string().required,
+    Name: yup.string().required,
+    Email: yup.string().required,
+    Phone: yup.number().required,
+    Message: yup.string().required,
   }
   const schema = yup.object().shape(shape)
   const labels = Object.keys(shape)
@@ -44,9 +46,13 @@ const ContactForm = () => {
         {...controlProps(register, errors, labels[3])}
         multiline
       />
-      <Button special='gradient' fullWidth type='submit' data-cy='contact-us-form-submit'>
-        send
-      </Button>
+      <Box className={classes.button}>
+        <Button special='gradient' type='submit'>
+          <Typography variant='sendMsgButton' data-cy='contact-us-form-submit'>
+            {'{ send }'}
+          </Typography>
+        </Button>
+      </Box>
     </form>
   )
 }

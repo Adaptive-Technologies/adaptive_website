@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   },
   formHeader: {
     paddingBottom: '20px',
-    paddingTop: '40px'
+    paddingTop: '40px',
   },
   formContainer: {
     [theme.breakpoints.up('xs')]: {
@@ -69,6 +69,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('lg')]: {
       padding: ' 0px 0px 30px 0px',
     },
+  },
+  button: {
+    display: 'flex',
+    justifyContent: 'center',
   },
 }))
 

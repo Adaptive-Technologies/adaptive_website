@@ -36,7 +36,10 @@ describe('Vistor can see and use contact section', () => {
           cy.get('[data-cy=contact-us-form-message]').type(
             'I would like to talk about an application I would like to be built.'
           )
-          cy.get('[data-cy=contact-us-form-submit]').should('contain', 'send')
+          cy.get('[data-cy=contact-us-form-submit]').should(
+            'contain',
+            '{ send }'
+          )
         })
       })
     })

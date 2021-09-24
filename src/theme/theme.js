@@ -10,14 +10,25 @@ const theme = createTheme({
         root: {
           margin: '1rem 0',
         },
-        label: {
-          color: '#fff',
-        },
       },
       defaultProps: {
         variant: 'outlined',
         fullWidth: true,
         minRows: 4,
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          color: '#fff',
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        notchedOutline: {
+          borderColor: '#fff',
+        },
       },
     },
     MuiTab: {
@@ -52,6 +63,7 @@ const theme = createTheme({
             height: 48,
             padding: '0 30px',
             textTransform: 'uppercase',
+            width: '80%',
           },
         },
       ],
@@ -114,7 +126,6 @@ const theme = createTheme({
     },
     button: {
       fontWeight: 400,
-      textTransform: 'none',
       fontSize: '36px',
       '@media (min-width:600px)': {
         fontSize: '18px',
@@ -122,7 +133,6 @@ const theme = createTheme({
     },
     sendMsgButton: {
       fontWeight: 400,
-      textTransform: 'none',
       fontSize: '24px',
       '@media (min-width:600px)': {
         fontSize: '18px',

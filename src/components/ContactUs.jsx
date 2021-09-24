@@ -12,6 +12,7 @@ const ContactUs = () => {
       <Box className={classes.backgroundGradient}>
         <Box className={classes.headerText}>
           <Typography
+            uppercase
             variant='h2'
             className={classes.header}
             data-cy='contact-us-header'>
@@ -34,13 +35,13 @@ const ContactUs = () => {
               </Typography>
             </Box>
             <Box>
-              <Typography variant='body2'>
+              <Typography variant='h4'>
                 Email: info@adaptivelabsnordics.se
               </Typography>
               <Link
                 target='_blank'
                 href='https://www.linkedin.com/company/adaptive-labs-nordics/'>
-                <Typography variant='body2'>
+                <Typography variant='h4'>
                   Linkedin
                 </Typography>
               </Link>
