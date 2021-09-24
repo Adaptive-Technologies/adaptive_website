@@ -11,12 +11,12 @@ import useStyles from '../theme/views/technologies.theme'
 const Technologies = () => {
   const classes = useStyles()
   const technologies = [
-    { id: 1, icon: lab1, name: 'Cypress', color: '#919191' },
-    { id: 2, icon: lab2, name: 'NodeJS', color: '#83BA63' },
-    { id: 3, icon: lab3, name: 'React', color: '#61DBFB' },
-    { id: 4, icon: lab4, name: 'Rails', color: '#CC0000' },
-    { id: 5, icon: lab5, name: 'Redux', color: '#764ABC' },
-    { id: 6, icon: lab6, name: 'CSS', color: '#2965F1' },
+    { icon: lab1, name: 'Cypress', color: '#919191', id: 1 },
+    { icon: lab2, name: 'NodeJS', color: '#83BA63', id: 2 },
+    { icon: lab3, name: 'React', color: '#61DBFB', id: 3 },
+    { icon: lab4, name: 'Rails', color: '#CC0000', id: 4 },
+    { icon: lab5, name: 'Redux', color: '#764ABC', id: 5 },
+    { icon: lab6, name: 'CSS', color: '#2965F1', id: 6 },
   ]
 
   const technologyCard = (technology, color, icon, id) => (
@@ -44,7 +44,7 @@ const Technologies = () => {
       </Typography>
       <Grid container className={classes.gridContainer} direction='row'>
         {technologies.map((tech) => {
-          return technologyCard(tech.id, tech.name, tech.color, tech.icon)
+          return technologyCard(tech.name, tech.color, tech.icon, tech.id)
         })}
       </Grid>
     </Box>
