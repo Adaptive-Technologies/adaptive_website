@@ -1,13 +1,22 @@
 import { makeStyles } from '@mui/styles'
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   section: {
     position: 'relative',
-    height: '80vh',
+    height: '92.5vh',
     width: '100%',
     objectFit: 'cover',
     '& video': {
       objectFit: 'cover',
+    },
+    [theme.breakpoints.up('sm')]: {
+      height: '94vh',
+    },
+    [theme.breakpoints.up('md')]: {
+      height: '95.5vh',
+    },
+    [theme.breakpoints.up('lg')]: {
+      height: '80vh',
     },
   },
   overlay: {
