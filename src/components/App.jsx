@@ -4,6 +4,7 @@ import Navbar from '../components/navigation/Navbar'
 import useStyles from '../theme/views/body.theme'
 import OurProcess from './our_process/OurProcess'
 import Hero from './Hero'
+import ClientsSection from './our_clients/ClientsSection'
 
 const App = () => {
   const classes = useStyles()
@@ -13,6 +14,7 @@ const App = () => {
         <Navbar />
         <Hero />
         <OurProcess />
+        <ClientsSection />
       </Box>
     </>
   )
