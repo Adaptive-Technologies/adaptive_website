@@ -5,6 +5,7 @@ import useStyles from '../theme/views/body.theme'
 import ContactUs from '../components/ContactUs'
 import OurProcess from './our_process/OurProcess'
 import Hero from './Hero'
+import Technologies from './Technologies'
 
 const App = () => {
   const classes = useStyles()
@@ -15,6 +16,8 @@ const App = () => {
         <Hero />
         <OurProcess />
         <ContactUs />
+        <Technologies/>
+
       </Box>
     </>
   )
