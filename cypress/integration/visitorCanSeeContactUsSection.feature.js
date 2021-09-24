@@ -8,7 +8,6 @@ describe('Vistor can see and use contact section', () => {
       beforeEach(() => {
         TestServices.sizeParams(size)
         cy.visit('/')
-        //TestServices.sizeCase(size)
       })
 
       it('is expected to show contact us section', () => {
@@ -37,7 +36,7 @@ describe('Vistor can see and use contact section', () => {
           cy.get('[data-cy=contact-us-form-message]').type(
             'I would like to talk about an application I would like to be built.'
           )
-          cy.get('[data-cy=contact-us-form-submit]').click()
+          cy.get('[data-cy=contact-us-form-submit]').should('contain', 'send')
         })
       })
     })

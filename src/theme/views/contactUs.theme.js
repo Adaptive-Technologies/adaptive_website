@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
   contactUsHeader: {
     [theme.breakpoints.up('xs')]: {
-      paddingTop: '20px',
+      paddingTop: '30px',
       justifyContent: 'center',
     },
   },
@@ -51,14 +51,24 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: '50px',
       maxWidth: '95%',
     },
-    maxWidth: '100%',
+    [theme.breakpoints.up('lg')]: {
+      paddingTop: '0px',
+      paddingBottom: '20px',
+      maxWidth: '100%',
+    },
   },
   formHeader: {
-    paddingBottom: '30px',
+    paddingBottom: '20px',
+    paddingTop: '40px'
   },
   formContainer: {
-    padding: '100px 10px 50px 10px',
-    justifyContent: 'center',
+    [theme.breakpoints.up('xs')]: {
+      padding: '100px 10px 50px 10px',
+      justifyContent: 'center',
+    },
+    [theme.breakpoints.up('lg')]: {
+      padding: ' 0px 0px 30px 0px',
+    },
   },
 }))
 

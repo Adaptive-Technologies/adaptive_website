@@ -16,15 +16,17 @@ const ContactForm = () => {
 
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) })
 
-  const onSubmit = (formData) => {
-    alert(JSON.stringify(formData))
-  }
   return (
-    <form onSubmit={handleSubmit(onSubmit)} data-cy='contact-us-form'>
+    <form
+      data-cy='contact-us-form'
+      data-netlify='true'
+      action='/success=true'
+      method='POST'
+      name='website-contact'>
+      <input type='hidden' name='form-name' value='website-contact' />
       <TextField
         data-cy='contact-us-form-name'
         {...controlProps(register, errors, labels[0])}
@@ -42,8 +44,8 @@ const ContactForm = () => {
         {...controlProps(register, errors, labels[3])}
         multiline
       />
-      <Button special='gradient' fullWidth type='submit'>
-        Send 
+      <Button special='gradient' fullWidth type='submit' data-cy='contact-us-form-submit'>
+        send
       </Button>
     </form>
   )
