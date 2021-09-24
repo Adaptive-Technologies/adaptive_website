@@ -3,6 +3,7 @@ import { Box } from '@mui/material'
 
 import useStyles from '../theme/views/body.theme'
 import Navbar from '../components/navigation/Navbar'
+import ContactUs from '../components/ContactUs'
 import Hero from './Hero'
 import OurProcess from './our_process/OurProcess'
 import ClientsSection from './our_clients/ClientsSection'
@@ -18,6 +19,7 @@ const App = () => {
         <OurProcess />
         <ClientsSection />
         <Technologies />
+        <ContactUs />
       </Box>
     </>
   )

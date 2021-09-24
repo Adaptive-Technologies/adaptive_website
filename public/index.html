@@ -11,10 +11,21 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Adaptive Labs Nordics</title>
   </head>
   <body>
+    <form
+      name="website-contact"
+      netlify
+      netlify-honeypot="bot-field"
+      action="/"
+      hidden
+    >
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="email" name="phone" />
+      <textarea name="message"></textarea>
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
