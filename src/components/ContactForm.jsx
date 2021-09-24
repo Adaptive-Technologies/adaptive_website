@@ -9,7 +9,7 @@ const ContactForm = () => {
   const classes = useStyles()
   const shape = {
     name: yup.string().required,
-    email: yup.string().email.required,
+    email: yup.string().email().required,
     phone: yup.number().required,
     message: yup.string().required,
   }
