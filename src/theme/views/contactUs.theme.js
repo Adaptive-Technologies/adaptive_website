@@ -53,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('lg')]: {
       paddingTop: '0px',
-      paddingBottom: '20px',
+      paddingBottom: '0px',
       maxWidth: '100%',
     },
   },
@@ -73,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     display: 'flex',
     justifyContent: 'center',
+    paddingTop: '40px',
   },
 }))
 
