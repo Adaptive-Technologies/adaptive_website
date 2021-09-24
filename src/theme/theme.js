@@ -70,10 +70,14 @@ const theme = createTheme({
     },
     h2: {
       fontWeight: 400,
-      fontSize: '48px',
+      fontSize: '36px',
       '@media (max-width:800px)': {
-        fontSize: '30px',
+        fontSize: '28px',
       },
+      padding: '2rem',
+      textAlign: 'center',
+      textTransform: 'uppercase',
+
     },
     h3: {
       fontWeight: 700,
