@@ -33,7 +33,7 @@ const Technologies = () => {
       <Typography
         data-cy='name'
         className={classes.name}
-        variant='body2'
+        variant='techName'
         style={{ color: color }}>
         {technology}
       </Typography>
