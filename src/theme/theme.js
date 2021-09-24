@@ -118,6 +118,8 @@ const theme = createTheme({
     techName: {
       fontWeight: 400,
       fontSize: '24px',
+      padding: '1rem',
+      fontFamily: ['video', 'serif'].join(','),
     },
     occupation: {
       fontWeight: 300,

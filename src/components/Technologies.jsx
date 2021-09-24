@@ -30,11 +30,7 @@ const Technologies = () => {
       xs={4}
       lg={2}>
       <img data-cy='icon' src={icon} className={classes.icon} alt='Vial icon' />
-      <Typography
-        data-cy='name'
-        className={classes.name}
-        style={{ color: color }}
-        variant='techName'>
+      <Typography variant='techName' data-cy='name' style={{ color: color }}>
         {technology}
       </Typography>
     </Grid>
