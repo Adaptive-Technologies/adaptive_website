@@ -19,7 +19,7 @@ const ContactUs = () => {
             {'< Contact us />'}
           </Typography>
         </Box>
-        <Box className={classes.container} >
+        <Box className={classes.container}>
           <Grid item container lg={1}></Grid>
           <Grid item container className={classes.containerGetInTouch} lg={4}>
             <Grid item container className={classes.contactUsHeader}>
@@ -30,8 +30,9 @@ const ContactUs = () => {
             <Box className={classes.text}>
               <Typography variant='body2' data-cy='contact-us-text'>
                 To know more about what we can offer you, please get in touch.
-                Feel free to call, email, send us a message on LinkedIn or use
-                the form.
+                Feel free to send us an email, a message on LinkedIn or use the
+                form. We will be happy to discuss your requirements and present
+                a possible solution. 
               </Typography>
             </Box>
             <Box>
@@ -41,9 +42,7 @@ const ContactUs = () => {
               <Link
                 target='_blank'
                 href='https://www.linkedin.com/company/adaptive-labs-nordics/'>
-                <Typography variant='h4'>
-                  Linkedin
-                </Typography>
+                <Typography variant='h4'>Linkedin</Typography>
               </Link>
             </Box>
           </Grid>

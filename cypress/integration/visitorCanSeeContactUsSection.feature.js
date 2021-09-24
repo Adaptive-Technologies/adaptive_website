@@ -21,7 +21,7 @@ describe('Vistor can see and use contact section', () => {
         )
         cy.get('[data-cy=contact-us-text]').should(
           'contain',
-          'To know more about what we can offer you, please get in touch. Feel free to call, email, send us a message on LinkedIn or use the form.'
+          'To know more about what we can offer you, please get in touch. Feel free to send us an email, a message on LinkedIn or use the form. We will be happy to discuss your requirements and present a possible solution.'
         )
         cy.get('[data-cy=contact-us-form-header]').should(
           'contain',
