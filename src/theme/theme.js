@@ -3,7 +3,34 @@ import palette from './palette.theme'
 
 const theme = createTheme({
   palette: palette,
+
   components: {
+    MuiTextField: {
+      styleOverrides: {
+        root: {
+          margin: '1rem 0',
+        },
+      },
+      defaultProps: {
+        variant: 'outlined',
+        fullWidth: true,
+        minRows: 4,
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          color: '#fff',
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        notchedOutline: {
+          borderColor: '#fff',
+        },
+      },
+    },
     MuiTab: {
       styleOverrides: {
         root: {
@@ -36,6 +63,7 @@ const theme = createTheme({
             color: 'white',
             padding: '8px 30px',
             textTransform: 'uppercase',
+            width: '80%',
           },
         },
       ],
@@ -137,7 +165,6 @@ const theme = createTheme({
     },
     button: {
       fontWeight: 400,
-      textTransform: 'none',
       fontSize: '24px',
       '@media (max-width:1280px)': {
         fontSize: '18px',
@@ -145,7 +172,6 @@ const theme = createTheme({
     },
     sendMsgButton: {
       fontWeight: 400,
-      textTransform: 'none',
       fontSize: '24px',
       '@media (min-width:600px)': {
         fontSize: '18px',
