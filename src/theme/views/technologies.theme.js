@@ -16,9 +16,13 @@ const useStyles = makeStyles((theme) => ({
   technologyCard: {
     minWidth: '80px',
     minHeight: '100px',
+    paddingTop: '16px'
   },
   icon: {
-    margin: '1rem',
+    height: '80px',
+  },
+  name: {
+    padding: '1rem',
   },
 }))
 
