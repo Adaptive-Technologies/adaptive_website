@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: 'auto',
     padding: '20% 40px',
     background:
-      'transparent radial-gradient(closest-side at 50% 50%, #F84B9B 0%, #7C264E 100%) 0% 0% no-repeat padding-box',
+      'transparent radial-gradient(closest-side at 50% 50%, #F84B9B 0%, #F84B9B 100%) 0% 0% no-repeat padding-box',
+      
     [theme.breakpoints.up('md')]: {
       padding: '50px 20%',
     },
@@ -29,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: 'auto',
     padding: '20% 40px',
     background:
-      'transparent radial-gradient(closest-side at 50% 50%, #D868C1 0%, #6C3461 100%) 0% 0% no-repeat padding-box',
+      'transparent radial-gradient(closest-side at 50% 50%, #D868C1 0%, #D868C1 100%) 0% 0% no-repeat padding-box',
 
     [theme.breakpoints.up('md')]: {
       padding: '50px 20%',
@@ -48,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: 'auto',
     padding: '20% 40px',
     background:
-      'transparent radial-gradient(closest-side at 50% 50%, #A581DD 0%, #53416F 100%) 0% 0% no-repeat padding-box',
+      'transparent radial-gradient(closest-side at 50% 50%, #A581DD 0%, #A581DD 100%) 0% 0% no-repeat padding-box',
 
     [theme.breakpoints.up('md')]: {
       padding: '50px 20%',
@@ -67,7 +68,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: 'auto',
     padding: '20% 40px',
     background:
-      'transparent radial-gradient(closest-side at 50% 50%, #4BA9FF 0%, #265580 100%) 0% 0% no-repeat padding-box',
+      'transparent radial-gradient(closest-side at 50% 50%, #4BA9FF 0%, #4BA9FF 100%) 0% 0% no-repeat padding-box',
 
     [theme.breakpoints.up('md')]: {
       padding: '50px 20%',

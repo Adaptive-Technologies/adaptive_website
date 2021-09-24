@@ -8,8 +8,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     width: '100%',
     height: '485px',
-    background:
-      'transparent radial-gradient(closest-side at 50% 50%, #8E0E49 0%, #470725 100%) 0% 0% no-repeat padding-box',
+    backgroundColor: '#8E0E49',
     padding: '0px 40px',
     [theme.breakpoints.up('md')]: {
       padding: '0px 20%',
