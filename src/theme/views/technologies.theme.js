@@ -21,9 +21,6 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     height: '80px',
   },
-  name: {
-    padding: '1rem',
-  },
 }))
 
 export default useStyles
