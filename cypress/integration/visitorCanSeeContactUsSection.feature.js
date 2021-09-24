@@ -38,7 +38,7 @@ describe('Vistor can see and use contact section', () => {
           )
           cy.get('[data-cy=contact-us-form-submit]').should(
             'contain',
-            '{ send }'
+            '{ send message }'
           )
         })
       })

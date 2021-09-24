@@ -70,7 +70,7 @@ const useStyles = makeStyles((theme) => ({
       padding: ' 0px 0px 30px 0px',
     },
   },
-  button: {
+  buttonForm: {
     display: 'flex',
     justifyContent: 'center',
     paddingTop: '40px',

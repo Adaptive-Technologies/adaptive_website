@@ -8,10 +8,10 @@ import useStyles from '../theme/views/contactUs.theme'
 const ContactForm = () => {
   const classes = useStyles()
   const shape = {
-    Name: yup.string().required,
-    Email: yup.string().required,
-    Phone: yup.number().required,
-    Message: yup.string().required,
+    name: yup.string().required,
+    email: yup.string().email.required,
+    phone: yup.number().required,
+    message: yup.string().required,
   }
   const schema = yup.object().shape(shape)
   const labels = Object.keys(shape)
@@ -46,10 +46,10 @@ const ContactForm = () => {
         {...controlProps(register, errors, labels[3])}
         multiline
       />
-      <Box className={classes.button}>
+      <Box className={classes.buttonForm}>
         <Button special='gradient' type='submit'>
           <Typography variant='sendMsgButton' data-cy='contact-us-form-submit'>
-            {'{ send }'}
+            {'{ send message }'}
           </Typography>
         </Button>
       </Box>

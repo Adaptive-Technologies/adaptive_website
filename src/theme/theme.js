@@ -63,7 +63,6 @@ const theme = createTheme({
             color: 'white',
             padding: '8px 30px',
             textTransform: 'uppercase',
-            width: '80%',
           },
         },
       ],
@@ -122,7 +121,6 @@ const theme = createTheme({
       padding: '2rem',
       textAlign: 'center',
       textTransform: 'uppercase',
-
     },
     h3: {
       fontWeight: 700,

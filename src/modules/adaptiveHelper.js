@@ -1,7 +1,7 @@
 export const controlProps = (register, errors, label) => {
-  let name = label.toLowerCase()
+  let name = label
   return {
-    label: label,
+    label: label.charAt(0).toUpperCase() + label.slice(1),
     inputProps: {
       ...register(name),
     },
