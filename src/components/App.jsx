@@ -1,9 +1,10 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import Navbar from '../components/navigation/Navbar'
+
 import useStyles from '../theme/views/body.theme'
-import OurProcess from './our_process/OurProcess'
+import Navbar from '../components/navigation/Navbar'
 import Hero from './Hero'
+import OurProcess from './our_process/OurProcess'
 import ClientsSection from './our_clients/ClientsSection'
 import Technologies from './Technologies'
 
@@ -16,7 +17,7 @@ const App = () => {
         <Hero />
         <OurProcess />
         <ClientsSection />
-        <Technologies/>
+        <Technologies />
       </Box>
     </>
   )

@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
   },
   contentBox: {
     position: 'absolute',
-    display: 'flex',
     flexDirection: 'column',
     marginTop: '15%',
     [theme.breakpoints.up('sm')]: {
@@ -30,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   grid: {
-    alignItems: 'center',
     marginTop: '20%',
     [theme.breakpoints.up('md')]: {
       marginTop: '10%',
