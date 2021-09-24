@@ -37,6 +37,7 @@ const theme = createTheme({
           color: '#fff',
           fontSize: '24px',
           textTransform: 'uppercase',
+          letterSpacing: '-0.48px',
         },
       },
     },
@@ -60,10 +61,37 @@ const theme = createTheme({
             borderRadius: 30,
             boxShadow: 'inset 0 3px 5px 2px rgba(255, 105, 135, .3)',
             color: 'white',
-            height: 48,
-            padding: '0 30px',
+            padding: '8px 30px',
             textTransform: 'uppercase',
             width: '80%',
+          },
+        },
+      ],
+    },
+    MuiSvgIcon: {
+      styleOverrides: {
+        root: {
+          color: '#fff',
+          fontSize: '3rem',
+        },
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: {
+          flexDirection: 'column',
+        },
+      },
+    },
+    MuiGrid: {
+      variants: [
+        {
+          props: { special: 'center' },
+          style: {
+            justifyContent: 'center',
+            justifyItems: 'center',
+            alignContent: 'center',
+            alignItems: 'center',
           },
         },
       ],
@@ -75,13 +103,19 @@ const theme = createTheme({
     h1: {
       fontWeight: 400,
       fontSize: '60px',
-      '@media (max-width:800px)': {
+      '@media (max-width:1280px)': {
+        fontSize: '48px',
+      },
+      '@media (max-width:620px)': {
         fontSize: '36px',
       },
+      padding: '2rem',
+      textAlign: 'center',
     },
     h2: {
       fontWeight: 400,
       fontSize: '48px',
+      letterSpacing: '-0.96px',
       '@media (max-width:800px)': {
         fontSize: '30px',
       },
@@ -122,12 +156,13 @@ const theme = createTheme({
     body2: {
       fontWeight: 400,
       fontSize: '18px',
+      lineHeight: '30px',
       fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
     },
     button: {
       fontWeight: 400,
-      fontSize: '36px',
-      '@media (min-width:600px)': {
+      fontSize: '24px',
+      '@media (max-width:1280px)': {
         fontSize: '18px',
       },
     },
@@ -141,6 +176,7 @@ const theme = createTheme({
     Tabs: {
       fontWeight: 400,
       fontSize: '24px',
+      letterSpacing: '-0.48px',
     },
   },
 })
