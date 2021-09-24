@@ -24,7 +24,7 @@ const CustomAccordion = () => {
         elevation={0}
         expanded={expanded === 'accordion1'}
         onChange={handleChange('accordion1')}
-        className={classes.accordion1}>
+        className={`${classes.accordion} ${classes.pink}`}>
         <AccordionSummary
           data-cy='step-1'
           expandIcon={<KeyboardArrowDownIcon className={classes.icon} />}>
@@ -59,7 +59,7 @@ const CustomAccordion = () => {
         elevation={0}
         expanded={expanded === 'accordion2'}
         onChange={handleChange('accordion2')}
-        className={classes.accordion2}>
+        className={`${classes.accordion} ${classes.purPink}`}>
         <AccordionSummary
           data-cy='step-2'
           expandIcon={<KeyboardArrowDownIcon className={classes.icon} />}>
@@ -98,7 +98,7 @@ const CustomAccordion = () => {
         elevation={0}
         expanded={expanded === 'accordion3'}
         onChange={handleChange('accordion3')}
-        className={classes.accordion3}>
+        className={`${classes.accordion} ${classes.purBlue}`}>
         <AccordionSummary
           data-cy='step-3'
           expandIcon={<KeyboardArrowDownIcon className={classes.icon} />}>
@@ -140,7 +140,7 @@ const CustomAccordion = () => {
         elevation={0}
         expanded={expanded === 'accordion4'}
         onChange={handleChange('accordion4')}
-        className={classes.accordion4}>
+        className={`${classes.accordion} ${classes.babyBlue}`}>
         <AccordionSummary
           data-cy='step-4'
           expandIcon={<KeyboardArrowDownIcon className={classes.icon} />}>
