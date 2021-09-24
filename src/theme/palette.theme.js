@@ -1,28 +1,32 @@
 const palette = {
   primary: {
-    main: '#FF499E',
+    main: '#8E0E49',
     contrastText: '#fff',
   },
   secondary: {
-    main: '#D264B6',
+    main: '#F84B9B',
     contrastText: '#fff',
   },
   third: {
-    main: '#A480CF',
+    main: '#D868C1',
     contrastText: '#fff',
   },
   fourth: {
-    main: '#779BE7',
+    main: '#A581DD',
     contrastText: '#fff',
   },
   fifth: {
-    main: '#49B6FF',
+    main: '#6588E2',
+    contrastText: '#fff',
+  },
+  sixth: {
+    main: '#4BA9FF',
     contrastText: '#fff',
   },
   background: {
     default: '#250022',
     paper: '#250022',
-    contrastText: '#fff'
+    contrastText: '#fff',
   },
   text: {
     primary: '#fff',
