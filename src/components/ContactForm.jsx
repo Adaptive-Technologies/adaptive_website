@@ -43,7 +43,7 @@ const ContactForm = () => {
         multiline
       />
       <Button special='gradient' fullWidth type='submit'>
-        Submit
+        Send 
       </Button>
     </form>
   )

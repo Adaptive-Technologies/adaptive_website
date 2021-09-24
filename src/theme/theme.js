@@ -10,6 +10,9 @@ const theme = createTheme({
         root: {
           margin: '1rem 0',
         },
+        label: {
+          color: '#fff',
+        },
       },
       defaultProps: {
         variant: 'outlined',
