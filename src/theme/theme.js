@@ -119,6 +119,10 @@ const theme = createTheme({
       '@media (max-width:800px)': {
         fontSize: '30px',
       },
+      padding: '2rem',
+      textAlign: 'center',
+      textTransform: 'uppercase',
+
     },
     h3: {
       fontWeight: 700,
