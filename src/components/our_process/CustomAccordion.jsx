@@ -11,7 +11,7 @@ import useStyles from '../../theme/views/our_process/customAccordion.theme'
 
 const CustomAccordion = () => {
   const classes = useStyles()
-  const [expanded, setExpanded] = useState(false)
+  const [expanded, setExpanded] = useState()
 
   const handleChange = (accordion) => (event, isExpanded) => {
     setExpanded(isExpanded ? accordion : false)
