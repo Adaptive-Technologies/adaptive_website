@@ -11,16 +11,17 @@ import useStyles from '../theme/views/technologies.theme'
 const Technologies = () => {
   const classes = useStyles()
   const technologies = [
-    { icon: lab1, name: 'Cypress', color: 'Grey' },
-    { icon: lab2, name: 'NodeJS', color: 'Green' },
-    { icon: lab3, name: 'React', color: 'Cyan' },
-    { icon: lab4, name: 'Rails', color: 'Red' },
-    { icon: lab5, name: 'Redux', color: 'Purple' },
-    { icon: lab6, name: 'CSS', color: 'DodgerBlue' },
+    { id: 1, icon: lab1, name: 'Cypress', color: '#919191' },
+    { id: 2, icon: lab2, name: 'NodeJS', color: '#83BA63' },
+    { id: 3, icon: lab3, name: 'React', color: '#61DBFB' },
+    { id: 4, icon: lab4, name: 'Rails', color: '#CC0000' },
+    { id: 5, icon: lab5, name: 'Redux', color: '#764ABC' },
+    { id: 6, icon: lab6, name: 'CSS', color: '#2965F1' },
   ]
 
-  const technologyCard = (technology, color, icon) => (
+  const technologyCard = (technology, color, icon, id) => (
     <Grid
+      key={id}
       item
       container
       data-cy='technology'
@@ -30,11 +31,7 @@ const Technologies = () => {
       xs={4}
       lg={2}>
       <img data-cy='icon' src={icon} className={classes.icon} alt='Vial icon' />
-      <Typography
-        data-cy='name'
-        className={classes.name}
-        variant='techName'
-        style={{ color: color }}>
+      <Typography variant='techName' data-cy='name' style={{ color: color }}>
         {technology}
       </Typography>
     </Grid>
@@ -47,7 +44,7 @@ const Technologies = () => {
       </Typography>
       <Grid container className={classes.gridContainer} direction='row'>
         {technologies.map((tech) => {
-          return technologyCard(tech.name, tech.color, tech.icon)
+          return technologyCard(tech.id, tech.name, tech.color, tech.icon)
         })}
       </Grid>
     </Box>

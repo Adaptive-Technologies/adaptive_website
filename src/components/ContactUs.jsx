@@ -11,7 +11,6 @@ const ContactUs = () => {
     <Box className={classes.backgroundGradient}>
       <Box className={classes.headerText}>
         <Typography
-          uppercase
           variant='h2'
           className={classes.header}
           data-cy='contact-us-header'>
