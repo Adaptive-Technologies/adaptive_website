@@ -15,8 +15,8 @@ const App = () => {
         <Navbar />
         <Hero />
         <OurProcess />
+        <Technologies />
         <ContactUs />
-        <Technologies/>
       </Box>
     </>
   )
