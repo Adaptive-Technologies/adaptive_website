@@ -8,7 +8,6 @@ import Hero from './Hero'
 import OurProcess from './our_process/OurProcess'
 import ClientsSection from './our_clients/ClientsSection'
 import Technologies from './Technologies'
-import Footer from './footer/Footer'
 
 const App = () => {
   const classes = useStyles()
@@ -21,7 +20,6 @@ const App = () => {
         <ClientsSection />
         <Technologies />
         <ContactUs />
-        <Footer />
       </Box>
     </>
   )
