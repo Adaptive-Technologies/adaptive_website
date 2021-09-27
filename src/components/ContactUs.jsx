@@ -3,6 +3,7 @@ import { Box } from '@mui/system'
 import { Grid, Link, Typography } from '@mui/material'
 import useStyles from '../theme/views/contactUs.theme'
 import ContactForm from './ContactForm'
+import Footer from './footer/Footer'
 
 const ContactUs = () => {
   const classes = useStyles()
@@ -56,6 +57,7 @@ const ContactUs = () => {
         </Grid>
         <Grid item container lg={1}></Grid>
       </Box>
+      <Footer />
     </Box>
   )
 }
