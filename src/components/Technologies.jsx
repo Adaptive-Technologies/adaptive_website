@@ -16,7 +16,7 @@ const Technologies = () => {
     { icon: lab3, name: 'React', color: '#61DBFB', id: 3 },
     { icon: lab4, name: 'Rails', color: '#CC0000', id: 4 },
     { icon: lab5, name: 'Redux', color: '#764ABC', id: 5 },
-    { icon: lab6, name: 'CSS', color: '#2965F1', id: 6 },
+    { icon: lab6, name: 'RSpec', color: '#ef4d6f', id: 6 },
   ]
 
   const technologyCard = (technology, color, icon, id) => (

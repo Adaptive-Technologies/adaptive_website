@@ -16,9 +16,9 @@ describe('Visitor can see our clients section', () => {
           '< clients that are adapting />'
         );
         cy.get('[data-cy=logo-grid]').within(() => {
-          cy.get('[data-cy=logo-1]').should('have.attr', 'alt').should('contain', 'Timotuz logo')
-          cy.get('[data-cy=logo-2]').should('have.attr', 'alt').should('contain', 'KCSC logo')
-          cy.get('[data-cy=logo-3]').should('have.attr', 'alt').should('contain', 'Flex Coast logo')
+          cy.get('[data-cy=logo-1]').should('have.attr', 'alt').should('contain', 'Flex Coast logo')
+          cy.get('[data-cy=logo-2]').should('have.attr', 'alt').should('contain', 'Timotuz logo')
+          cy.get('[data-cy=logo-3]').should('have.attr', 'alt').should('contain', 'KCSC logo')
         })
       });
     });

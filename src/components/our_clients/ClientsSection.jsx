@@ -21,7 +21,7 @@ const ClientsSection = () => {
         <Typography data-cy='header' variant='h2'>
           {'< clients that are adapting />'}
         </Typography>
-        <Grid className={classes.grid} container special='center'>
+        <Grid className={classes.grid} data-cy='logo-grid' container special='center'>
           <Grid className={classes.gridItem} item xs={4}>
             <CardMedia
               className={classes.logo}
