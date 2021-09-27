@@ -27,6 +27,7 @@ const AboutUs = () => {
             className={`${classes.image} ${borderColor()}`}
             component='img'
             image={staffCard.image}
+            alt={`Photo of ${staffCard.name}`}
           />
         </Grid>
         <Grid
