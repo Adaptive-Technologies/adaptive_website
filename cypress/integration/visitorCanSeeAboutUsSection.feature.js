@@ -8,7 +8,6 @@ describe('Visitor can see about us section', () => {
       beforeEach(() => {
         TestServices.sizeParams(size)
         cy.visit('/')
-        TestServices.sizeCase(size)
       })
 
       it('is expected to display text about the company', () => {
