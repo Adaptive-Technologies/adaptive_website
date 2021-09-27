@@ -6,7 +6,7 @@ import { makeStyles } from '@mui/styles'
 const useStyles = makeStyles((theme) => ({
   section: {
     width: '100%',
-    padding: '2rem',
+    padding: '2rem 0',
   },
   staffCard: {
     marginTop: '4rem',
@@ -47,7 +47,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   description: {
-    padding: '3rem',
+    [theme.breakpoints.up('xs')]: {
+      padding: '1rem',
+    },
+    [theme.breakpoints.up('md')]: {
+      padding: '3rem',
+    },
   },
 }))
 
