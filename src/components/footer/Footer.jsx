@@ -4,15 +4,15 @@ import { Box } from '@mui/system'
 import { animated, useSpring } from 'react-spring'
 import useStyles from '../../theme/views/footer.theme'
 
-const config = { mass: 5, tension: 70, friction: 200 }
+const config = { mass: 200, tension: 2000, friction: 1500, damping: 1000 }
 
 const Footer = () => {
   const classes = useStyles()
   const styles = useSpring({
     config,
     loop: { reverse: true },
-    from: { y: -100 },
-    to: { y: 50 },
+    from: { y: 100 },
+    to: { y: 0 },
   })
   // const styles = useTrail({
   //   loop: { reverse: true },
@@ -71,7 +71,7 @@ const Footer = () => {
           <animated.circle
             style={styles}
             cx='20%'
-            cy='80%'
+            cy='90%'
             fill='#F84B9B'
             r='32'
           />
@@ -85,7 +85,7 @@ const Footer = () => {
           <animated.circle
             style={styles}
             cx='40%'
-            cy='94%'
+            cy='105%'
             fill='#F84B9B'
             r='32'
           />
@@ -99,28 +99,28 @@ const Footer = () => {
           <animated.circle
             style={styles}
             cx='60%'
-            cy='80%'
+            cy='90%'
             fill='#F84B9B'
             r='32'
           />
           <animated.circle
             style={styles}
             cx='70%'
-            cy='70%'
+            cy='90%'
             fill='#F84B9B'
             r='32'
           />
           <animated.circle
             style={styles}
             cx='80%'
-            cy='60%'
+            cy='70%'
             fill='#F84B9B'
             r='32'
           />
           <animated.circle
             style={styles}
             cx='90%'
-            cy='55%'
+            cy='90%'
             fill='#F84B9B'
             r='32'
           />
