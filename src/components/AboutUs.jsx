@@ -15,10 +15,11 @@ const useStyles = makeStyles((theme) => ({
     padding: '1rem',
   },
   image: {
-    width: '100%',
+    maxWidth: '252px',
     objectFit: 'contain',
     border: '4px solid white',
     borderRadius: '100%',
+    margin: 'auto',
   },
   pinkBorder: {
     boxShadow: `0 0 0 4px ${theme.palette.secondary.main}`,
@@ -26,9 +27,28 @@ const useStyles = makeStyles((theme) => ({
   blueBorder: {
     boxShadow: `0 0 0 4px ${theme.palette.sixth.main}`,
   },
+  name: {
+    [theme.breakpoints.up('xs')]: {
+      textAlign: 'center',
+      paddingBottom: '1rem',
+    },
+    [theme.breakpoints.up('md')]: {
+      textAlign: 'left',
+      paddingBottom: '0',
+    },
+  },
+  staffDescription: {
+    [theme.breakpoints.up('xs')]: {
+      maxWidth: '600px',
+      margin: 'auto',
+    },
+    [theme.breakpoints.up('md')]: {
+      maxWidth: '100%',
+    },
+  },
   description: {
     padding: '3rem',
-  }
+  },
 }))
 
 const AboutUs = () => {
@@ -42,7 +62,7 @@ const AboutUs = () => {
         return classes.blueBorder
       }
     }
-    
+
     return (
       <Grid
         container
@@ -65,12 +85,18 @@ const AboutUs = () => {
           justifyContent='center'
           xs={12}
           md={8}>
-          <Typography data-cy='name' variant='h3' gutterBottom>
+          <Typography
+            data-cy='name'
+            className={classes.name}
+            variant='h3'
+            gutterBottom>
             {staffCard.name}
           </Typography>
-          <Typography data-cy='description' variant='body1'>
-            {staffCard.description}
-          </Typography>
+          <Box className={classes.staffDescription}>
+            <Typography data-cy='description' component='div' variant='body1'>
+              {staffCard.description}
+            </Typography>
+          </Box>
         </Grid>
       </Grid>
     )
@@ -82,7 +108,10 @@ const AboutUs = () => {
         <Typography data-cy='header' variant='h2'>
           {'< About Us />'}
         </Typography>
-        <Typography data-cy='description' variant='body1' className={classes.description}>
+        <Typography
+          data-cy='description'
+          variant='body1'
+          className={classes.description}>
           Adaptive Labs Nordics was founded by a group of passionate developers
           and designers. With a goal to build a company that puts its customers
           needs first through Agile Methodologies and close partnerships. Using
