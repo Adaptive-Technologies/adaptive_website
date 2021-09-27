@@ -15,6 +15,11 @@ const useStyles = makeStyles((theme) => ({
     bottom: '-400px',
     marginBottom: '0px',
   },
+  circleBox: {
+    position: 'absolute',
+    display: 'flex',
+    bottom: '-300px',
+  }
 }))
 
 export default useStyles

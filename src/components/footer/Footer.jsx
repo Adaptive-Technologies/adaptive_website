@@ -1,16 +1,32 @@
 import React from 'react'
 import Goo from 'gooey-react'
 import { Box } from '@mui/system'
-import { useSpring, animated } from 'react-spring'
+import { animated, useSpring } from 'react-spring'
 import useStyles from '../../theme/views/footer.theme'
+
+const config = { mass: 5, tension: 70, friction: 200 }
 
 const Footer = () => {
   const classes = useStyles()
   const styles = useSpring({
+    config,
     loop: { reverse: true },
-    from: { x: 0 },
-    to: { x: 100 },
+    from: { y: -100 },
+    to: { y: 50 },
   })
+  // const styles = useTrail({
+  //   loop: { reverse: true },
+  //   from: { y: -100 },
+  //   to: { y: 50 },
+  // })
+  // const { x } = useSpring({
+  //   from: { x: 0 },
+  //   to: { y: 50 },
+  // })
+
+  // useEffect(() => {
+  //   x.start({ config: { friction: 100 } })
+  // }, [x])
 
   const Wave = (props) => {
     return (
@@ -44,9 +60,74 @@ const Footer = () => {
         }}
       /> */}
       <Goo>
-        <Wave className={classes.innerWave}/>
+        <svg className={classes.circleBox} width='100%' height='320'>
+          <animated.circle
+            style={styles}
+            cx='10%'
+            cy='75%'
+            fill='#F84B9B'
+            r='32'
+          />
+          <animated.circle
+            style={styles}
+            cx='20%'
+            cy='80%'
+            fill='#F84B9B'
+            r='32'
+          />
+          <animated.circle
+            style={styles}
+            cx='30%'
+            cy='90%'
+            fill='#F84B9B'
+            r='32'
+          />
+          <animated.circle
+            style={styles}
+            cx='40%'
+            cy='94%'
+            fill='#F84B9B'
+            r='32'
+          />
+          <animated.circle
+            style={styles}
+            cx='50%'
+            cy='90%'
+            fill='#F84B9B'
+            r='32'
+          />
+          <animated.circle
+            style={styles}
+            cx='60%'
+            cy='80%'
+            fill='#F84B9B'
+            r='32'
+          />
+          <animated.circle
+            style={styles}
+            cx='70%'
+            cy='70%'
+            fill='#F84B9B'
+            r='32'
+          />
+          <animated.circle
+            style={styles}
+            cx='80%'
+            cy='60%'
+            fill='#F84B9B'
+            r='32'
+          />
+          <animated.circle
+            style={styles}
+            cx='90%'
+            cy='55%'
+            fill='#F84B9B'
+            r='32'
+          />
+        </svg>
+        <Wave className={classes.innerWave} />
       </Goo>
-        <Wave className={classes.outerWave}/>
+      <Wave className={classes.outerWave} />
     </Box>
   )
 }
