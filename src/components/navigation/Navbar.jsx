@@ -11,7 +11,6 @@ import MenuIcon from '@mui/icons-material/Menu'
 import useStyles from '../../theme/views/navbar.theme'
 import Adaptive_logo from '../../assets/images/Adaptive_logo_WHITE_PINK.png'
 import navbarHelper from '../../modules/navbarHelper'
-import theme from '../../theme/theme'
 
 const Navbar = () => {
   const isMobile = useMediaQuery('(max-width:1700px)')
@@ -31,6 +30,7 @@ const Navbar = () => {
             className={classes.logo}
             src={Adaptive_logo}
             data-cy='adaptive-logo'
+            alt='The Adaptive Logo'
           />
 
           <SwipeableDrawer
