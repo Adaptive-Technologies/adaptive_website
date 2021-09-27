@@ -154,7 +154,7 @@ const theme = createTheme({
     },
     body1: {
       fontWeight: 400,
-      fontSize: '24px',
+      fontSize: '1.3rem',
       fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
     },
     body2: {
