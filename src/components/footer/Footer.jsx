@@ -1,7 +1,13 @@
 import React from 'react'
+import Goo from 'gooey-react'
 
 const Footer = () => {
-  return <></>
+
+  return (
+    <>
+   
+    </>
+  )
 }
 
 export default Footer
