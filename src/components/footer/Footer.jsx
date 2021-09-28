@@ -1,18 +1,20 @@
 import React from 'react'
 import Goo from 'gooey-react'
-import { Box } from '@mui/material'
+import { Box, useMediaQuery } from '@mui/material'
 import { animated, useSpring } from 'react-spring'
 import useStyles from '../../theme/views/footer.theme'
+import theme from '../../theme/theme'
 
-const config = { mass: 200, tension: 2000, friction: 1500, damping: 1000 }
+const config = { mass: 200, tension: 40, friction: 0, dampening: 0,  }
 
 const Footer = () => {
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'))
   const classes = useStyles()
   const styles = useSpring({
     config,
     loop: { reverse: true },
     from: { y: 100 },
-    to: { y: 0 },
+    to: { y: 50 },
   })
 
   const Wave = (props) => {
@@ -22,7 +24,7 @@ const Footer = () => {
         xmlns='http://www.w3.org/2000/svg'
         x={0}
         y={0}
-        viewBox='0 618 1920 240'
+        viewBox={isMobile ? '0 618 1920 440' : '0 618 1920 240' }
         xmlSpace='preserve'
         {...props}>
         <path

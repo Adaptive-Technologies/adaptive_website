@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   innerWave: {
     position: 'absolute',
     backgroundColor: '#0000000',
-    bottom: '-200px',
+    bottom: '-160px',
     [theme.breakpoints.up('sm')]: {
       bottom: '-250px',
     },
@@ -27,24 +27,24 @@ const useStyles = makeStyles((theme) => ({
     bottom: '-200px',
     marginBottom: '0px',
     [theme.breakpoints.up('sm')]: {
-      bottom: '-250px',
+      bottom: '-290px',
     },
     [theme.breakpoints.up('md')]: {
-      bottom: '-220px',
+      bottom: '-260px',
     },
     [theme.breakpoints.up('lg')]: {
-      bottom: '-300px',
+      bottom: '-340px',
     },
     [theme.breakpoints.up('xl')]: {
-      bottom: '-370px',
+      bottom: '-410px',
     },
   },
   circleBox: {
     position: 'absolute',
     display: 'flex',
-    bottom: '-200px',
+    bottom: '-130px',
     [theme.breakpoints.up('sm')]: {
-      bottom: '-250px',
+      bottom: '-170px',
     },
     [theme.breakpoints.up('md')]: {
       bottom: '-200px',

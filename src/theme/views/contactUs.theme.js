@@ -3,18 +3,18 @@ import { makeStyles } from '@mui/styles'
 const useStyles = makeStyles((theme) => ({
   backgroundGradient: {
     width: '100%',
-    height: 'calc(100vh + 730px)',
+    height: 'calc(100% + 600px)',
     background:
       'transparent linear-gradient(165deg, #250022 0%, #250022 14%, #F84B9B 37%, #A581DD 51%, #6588E2 63%, #2B6BA7 72%, #250022 88%, #000000 100%) 0% 0% no-repeat padding-box',
     paddingBottom: '100px',
     [theme.breakpoints.up('sm')]: {
-      height: 'calc(100vh + 570px)',
+      height: 'calc(100vh + 600px)',
     },
     [theme.breakpoints.up('md')]: {
-      height: 'calc(100vh + 120px)',
+      height: 'calc(100vh + 550px)',
     },
     [theme.breakpoints.up('lg')]: {
-      height: 'calc(100vh + 180px)',
+      height: 'calc(100vh + 250px)',
     },
     [theme.breakpoints.up('xl')]: {
       height: 'calc(100vh + 317px)',
