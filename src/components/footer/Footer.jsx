@@ -1,6 +1,6 @@
 import React from 'react'
 import Goo from 'gooey-react'
-import { Box } from '@mui/system'
+import { Box } from '@mui/material'
 import { animated, useSpring } from 'react-spring'
 import useStyles from '../../theme/views/footer.theme'
 
@@ -14,19 +14,6 @@ const Footer = () => {
     from: { y: 100 },
     to: { y: 0 },
   })
-  // const styles = useTrail({
-  //   loop: { reverse: true },
-  //   from: { y: -100 },
-  //   to: { y: 50 },
-  // })
-  // const { x } = useSpring({
-  //   from: { x: 0 },
-  //   to: { y: 50 },
-  // })
-
-  // useEffect(() => {
-  //   x.start({ config: { friction: 100 } })
-  // }, [x])
 
   const Wave = (props) => {
     return (
@@ -62,6 +49,7 @@ const Footer = () => {
       <Goo>
         <svg className={classes.circleBox} width='100%' height='320'>
           <animated.circle
+            className={classes.circle1}
             style={styles}
             cx='10%'
             cy='75%'
@@ -69,6 +57,7 @@ const Footer = () => {
             r='32'
           />
           <animated.circle
+            className={classes.circle2}
             style={styles}
             cx='20%'
             cy='90%'
@@ -76,6 +65,7 @@ const Footer = () => {
             r='32'
           />
           <animated.circle
+            className={classes.circle1}
             style={styles}
             cx='30%'
             cy='90%'
@@ -83,6 +73,7 @@ const Footer = () => {
             r='32'
           />
           <animated.circle
+            className={classes.circle2}
             style={styles}
             cx='40%'
             cy='105%'
@@ -90,6 +81,7 @@ const Footer = () => {
             r='32'
           />
           <animated.circle
+            className={classes.circle1}
             style={styles}
             cx='50%'
             cy='90%'
@@ -97,6 +89,7 @@ const Footer = () => {
             r='32'
           />
           <animated.circle
+            className={classes.circle2}
             style={styles}
             cx='60%'
             cy='90%'
@@ -104,6 +97,7 @@ const Footer = () => {
             r='32'
           />
           <animated.circle
+            className={classes.circle1}
             style={styles}
             cx='70%'
             cy='90%'
@@ -111,6 +105,7 @@ const Footer = () => {
             r='32'
           />
           <animated.circle
+            className={classes.circle2}
             style={styles}
             cx='80%'
             cy='70%'
@@ -118,6 +113,7 @@ const Footer = () => {
             r='32'
           />
           <animated.circle
+            className={classes.circle1}
             style={styles}
             cx='90%'
             cy='90%'

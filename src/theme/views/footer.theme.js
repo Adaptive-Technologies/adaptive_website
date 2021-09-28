@@ -19,7 +19,16 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     display: 'flex',
     bottom: '-300px',
-  }
+  },
+  circle1: {
+    [theme.breakpoints.up('xs')]: {
+      display: 'none',
+    },
+    [theme.breakpoints.up('lg')]: {
+      display: 'flex',
+    },
+  },
+  circle2: {},
 }))
 
 export default useStyles
