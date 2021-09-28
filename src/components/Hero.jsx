@@ -2,7 +2,7 @@ import React, { Suspense } from 'react'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import useStyles from '../theme/views/hero.theme'
 
-const Hero = () => {
+const Hero = ({id}) => {
   const classes = useStyles()
   const BackgroundVideo = React.lazy(() => import('./hero/BackgroundVideo'))
   const BackgroundImage = React.lazy(() => import('./hero/BackgroundImage'))
@@ -16,7 +16,7 @@ const Hero = () => {
   )
 
   return (
-    <Box className={classes.section}>
+    <Box className={classes.section} id={id}>
       <Suspense fallback={backgroundImage}>
         <BackgroundVideo />
       </Suspense>
