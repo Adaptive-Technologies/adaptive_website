@@ -7,28 +7,65 @@ const useStyles = makeStyles((theme) => ({
   innerWave: {
     position: 'absolute',
     backgroundColor: '#0000000',
-    bottom: '-400px',
+    bottom: '-200px',
+    [theme.breakpoints.up('sm')]: {
+      bottom: '-250px',
+    },
+    [theme.breakpoints.up('md')]: {
+      bottom: '-220px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      bottom: '-300px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      bottom: '-370px',
+    },
   },
   outerWave: {
     position: 'absolute',
     backgroundColor: '#0000000',
-    bottom: '-400px',
+    bottom: '-200px',
     marginBottom: '0px',
+    [theme.breakpoints.up('sm')]: {
+      bottom: '-250px',
+    },
+    [theme.breakpoints.up('md')]: {
+      bottom: '-220px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      bottom: '-300px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      bottom: '-370px',
+    },
   },
   circleBox: {
     position: 'absolute',
     display: 'flex',
-    bottom: '-300px',
-  },
-  circle1: {
-    [theme.breakpoints.up('xs')]: {
-      display: 'none',
+    bottom: '-200px',
+    [theme.breakpoints.up('sm')]: {
+      bottom: '-250px',
+    },
+    [theme.breakpoints.up('md')]: {
+      bottom: '-200px',
     },
     [theme.breakpoints.up('lg')]: {
+      bottom: '-245px',
+    },
+    [theme.breakpoints.up('xl')]: {
+      bottom: '-270px',
+    },
+  },
+  circle1: {
+   
+
+  },
+  circle2: {
+    display: 'none',
+    [theme.breakpoints.up('sm')]: {
       display: 'flex',
     },
   },
-  circle2: {},
 }))
 
 export default useStyles

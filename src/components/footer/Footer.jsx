@@ -37,73 +37,35 @@ const Footer = () => {
 
   return (
     <Box className={classes.footer}>
-      {/* <animated.div
-        style={{
-          width: '94.77%',
-          height: 80,
-          backgroundColor: '#46e891',
-          borderRadius: 16,
-          ...styles,
-        }}
-      /> */}
       <Goo>
         <svg className={classes.circleBox} width='100%' height='320'>
           <animated.circle
             className={classes.circle1}
             style={styles}
-            cx='10%'
-            cy='75%'
-            fill='#F84B9B'
-            r='32'
-          />
-          <animated.circle
-            className={classes.circle2}
-            style={styles}
             cx='20%'
-            cy='90%'
+            cy='82%'
             fill='#F84B9B'
             r='32'
           />
-          <animated.circle
-            className={classes.circle1}
-            style={styles}
-            cx='30%'
-            cy='90%'
-            fill='#F84B9B'
-            r='32'
-          />
+          
           <animated.circle
             className={classes.circle2}
             style={styles}
             cx='40%'
-            cy='105%'
+            cy='100%'
             fill='#F84B9B'
             r='32'
           />
+         
           <animated.circle
             className={classes.circle1}
-            style={styles}
-            cx='50%'
-            cy='90%'
-            fill='#F84B9B'
-            r='32'
-          />
-          <animated.circle
-            className={classes.circle2}
             style={styles}
             cx='60%'
             cy='90%'
             fill='#F84B9B'
             r='32'
           />
-          <animated.circle
-            className={classes.circle1}
-            style={styles}
-            cx='70%'
-            cy='90%'
-            fill='#F84B9B'
-            r='32'
-          />
+         
           <animated.circle
             className={classes.circle2}
             style={styles}
@@ -112,14 +74,7 @@ const Footer = () => {
             fill='#F84B9B'
             r='32'
           />
-          <animated.circle
-            className={classes.circle1}
-            style={styles}
-            cx='90%'
-            cy='90%'
-            fill='#F84B9B'
-            r='32'
-          />
+          
         </svg>
         <Wave className={classes.innerWave} />
       </Goo>
