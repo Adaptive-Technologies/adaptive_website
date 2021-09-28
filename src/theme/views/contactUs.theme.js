@@ -6,6 +6,10 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
     background:
       'transparent linear-gradient(165deg, #250022 0%, #250022 14%, #F84B9B 37%, #A581DD 51%, #6588E2 63%, #2B6BA7 72%, #250022 88%, #000000 100%) 0% 0% no-repeat padding-box',
+    paddingBottom: '200px',
+    [theme.breakpoints.up('sm')]: {
+      paddingBottom: '400px',
+    },
   },
   headerText: {
     display: 'flex',
