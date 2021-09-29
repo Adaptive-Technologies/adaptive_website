@@ -1,12 +1,14 @@
 import { makeStyles } from '@mui/styles'
 
 const useStyles = makeStyles((theme) => ({
+  section: {
+    padding: '50px 0'
+  },
   headerText: {
     display: 'flex',
     justifyContent: 'center',
     paddingTop: '50px',
   },
-
   container: {
     [theme.breakpoints.up('xs')]: {
       display: 'flex',
