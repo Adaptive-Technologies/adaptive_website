@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material'
 import useStyles from '../../theme/views/our_process/process.theme'
 import CustomAccordion from './CustomAccordion'
 
-const OurProcess = ({id}) => {
+const OurProcess = ({ id }) => {
   const classes = useStyles()
   return (
     <>

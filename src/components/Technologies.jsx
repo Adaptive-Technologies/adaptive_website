@@ -8,7 +8,7 @@ import lab6 from '../assets/icons/vials/lab6.svg'
 import { Grid, Typography, Box } from '@mui/material'
 import useStyles from '../theme/views/technologies.theme'
 
-const Technologies = ({id}) => {
+const Technologies = ({ id }) => {
   const classes = useStyles()
   const technologies = [
     { icon: lab1, name: 'Cypress', color: '#919191', id: 1 },

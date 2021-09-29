@@ -109,7 +109,6 @@ const theme = createTheme({
     },
   },
   typography: {
-    // fontFamily: ['video', 'sans-serif'].join(','),
     fontFamily: ['Sarpanch', 'sans-serif'].join(','),
     fontStyle: 'normal',
     h1: {
