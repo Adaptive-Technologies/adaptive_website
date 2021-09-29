@@ -39,7 +39,8 @@ const Navbar = () => {
             anchor='right'
             open={drawerOpen}
             onClose={() => setDrawerOpen(false)}
-            onOpen={() => setDrawerOpen(true)}>
+            onOpen={() => setDrawerOpen(true)}
+            onClick={() => setDrawerOpen(false)}>
             {tabs}
           </SwipeableDrawer>
           <IconButton
