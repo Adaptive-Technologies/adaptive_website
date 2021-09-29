@@ -21,8 +21,10 @@ const App = () => {
         <OurProcess />
         <ClientsSection />
         <Technologies />
+        <Box className={classes.backgroundGradient}>
         <AboutUs />
         <ContactUs />
+        </Box>
         <Footer />
       </Box>
     </>

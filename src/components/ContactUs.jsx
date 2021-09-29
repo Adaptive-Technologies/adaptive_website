@@ -8,7 +8,7 @@ const ContactUs = () => {
   const classes = useStyles()
 
   return (
-      <Box className={classes.backgroundGradient}>
+      <Box >
         <Box className={classes.headerText}>
           <Typography
             variant='h2'
