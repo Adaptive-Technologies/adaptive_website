@@ -4,7 +4,7 @@ const useStyles = makeStyles((theme) => ({
   section: {
     width: '100%',
     padding: '2rem 0',
-    margin: '10px 0'
+    margin: '10px 0',
   },
   staffCard: {
     marginTop: '4rem',
