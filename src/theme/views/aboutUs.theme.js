@@ -3,7 +3,7 @@ import { makeStyles } from '@mui/styles'
 const useStyles = makeStyles((theme) => ({
   section: {
     width: '100%',
-    padding: '2rem 0',
+    padding: '70px 0',
     margin: '10px 0',
   },
   staffCard: {
