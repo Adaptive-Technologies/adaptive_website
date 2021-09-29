@@ -56,6 +56,31 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
     },
   },
+  logoBox: {
+    position: 'absolute',
+    bottom: '-100px',
+    display: 'flex',
+    width: '97vw',
+    justifyContent: 'center',
+    [theme.breakpoints.up('sm')]: {
+      width: '98vw',
+    },
+    [theme.breakpoints.up('md')]: {
+      justifyContent: 'flex-start',
+      padding: '0 200px',
+    },
+    [theme.breakpoints.up('uwhd')]: {
+      justifyContent: 'flex-start',
+      padding: '0 300px',
+    },
+    [theme.breakpoints.up('kkkk')]: {
+      justifyContent: 'flex-start',
+      padding: '0 350px',
+    },
+  },
+  logo: {
+    width: '100px',
+  },
 }))
 
 export default useStyles

@@ -4,6 +4,7 @@ import { Box, useMediaQuery } from '@mui/material'
 import { animated, useSpring } from 'react-spring'
 import useStyles from '../../theme/views/footer.theme'
 import theme from '../../theme/theme'
+import Adaptive_logo from '../../assets/images/Adaptive_logo_WHITE_PINK.png'
 
 const config = { mass: 200, tension: 40, friction: 0, dampening: 0 }
 
@@ -94,6 +95,14 @@ const Footer = () => {
         <Wave className={classes.innerWave} />
       </Goo>
       <Wave className={classes.outerWave} />
+      <Box className={classes.logoBox}>
+        <img
+          className={classes.logo}
+          src={Adaptive_logo}
+          data-cy='adaptive-logo'
+          alt='adaptive-logo'
+        />
+      </Box>
     </Box>
   )
 }
