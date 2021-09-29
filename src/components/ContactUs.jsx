@@ -4,11 +4,11 @@ import { Grid, Link, Typography } from '@mui/material'
 import useStyles from '../theme/views/contactUs.theme'
 import ContactForm from './ContactForm'
 
-const ContactUs = ({id}) => {
+const ContactUs = ({ id }) => {
   const classes = useStyles()
 
   return (
-    <Box className={classes.backgroundGradient} id={id}>
+    <Box id={id}>
       <Box className={classes.headerText}>
         <Typography
           variant='h2'
