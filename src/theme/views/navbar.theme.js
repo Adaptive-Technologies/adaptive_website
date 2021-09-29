@@ -9,21 +9,17 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-evenly',
-    margin: 'auto',
     maxWidth: '100%',
     height: '30px',
     padding: '32px 16px',
+    justifyContent: 'space-between',
     [theme.breakpoints.up('lg')]: {
       padding: '40px',
     },
   },
-  logoBox: {
-    justifyContent: 'center',
-  },
   logo: {
-    width: 'auto',
-    height: '40px',
+    objectFit: 'contained',
+    height: '50px',
     [theme.breakpoints.up('lg')]: {
       height: '60px',
     },
