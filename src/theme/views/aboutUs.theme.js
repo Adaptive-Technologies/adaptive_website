@@ -4,12 +4,13 @@ const useStyles = makeStyles((theme) => ({
   section: {
     width: '100%',
     padding: '2rem 0',
+    margin: '10px 0'
   },
   staffCard: {
     marginTop: '4rem',
   },
   cardCell: {
-    padding: '1rem',
+    padding: '3rem 3rem',
   },
   image: {
     maxWidth: '252px',
@@ -37,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
   staffDescription: {
     [theme.breakpoints.up('xs')]: {
       maxWidth: '600px',
-      margin: 'auto',
+      margin: '0 auto',
     },
     [theme.breakpoints.up('md')]: {
       maxWidth: '100%',

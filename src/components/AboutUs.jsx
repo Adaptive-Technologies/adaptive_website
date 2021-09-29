@@ -41,12 +41,12 @@ const AboutUs = () => {
           <Typography
             data-cy='name'
             className={classes.name}
-            variant='h3'
+            variant='h4'
             gutterBottom>
             {staffCard.name}
           </Typography>
           <Box className={classes.staffDescription}>
-            <Typography data-cy='description' component='div' variant='body1'>
+            <Typography data-cy='description' component='div' variant='body2'>
               {staffCard.description}
             </Typography>
           </Box>
@@ -57,7 +57,7 @@ const AboutUs = () => {
 
   return (
     <Box data-cy='about-us' className={classes.section}>
-      <Container maxWidth='md'>
+      <Container maxWidth='lg'>
         <Typography data-cy='header' variant='h2'>
           {'< about us />'}
         </Typography>
