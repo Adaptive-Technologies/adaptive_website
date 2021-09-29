@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme) => ({
       bottom: '80px',
     },
     [theme.breakpoints.up('kkkk')]: {
-      bottom: '100px',
+      bottom: '120px',
     },
   },
   circle1: {
