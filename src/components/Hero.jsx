@@ -1,8 +1,9 @@
 import React, { Suspense } from 'react'
 import { Box, Button, Grid, Typography } from '@mui/material'
 import useStyles from '../theme/views/hero.theme'
+import { HashLink } from 'react-router-hash-link'
 
-const Hero = ({id}) => {
+const Hero = ({ id }) => {
   const classes = useStyles()
   const BackgroundVideo = React.lazy(() => import('./hero/BackgroundVideo'))
   const BackgroundImage = React.lazy(() => import('./hero/BackgroundImage'))
@@ -27,9 +28,14 @@ const Hero = ({id}) => {
         direction='column'
         special='center'>
         <Typography data-cy='slogan' variant='h1'>
-          Adaptive labs adapts your business to the future
+          Digital transformation is a game changer
         </Typography>
-        <Button data-cy='contact-us-btn' special='gradient'>
+        <Button
+          data-cy='contact-us-btn'
+          special='gradient'
+          component={HashLink}
+          smooth
+          to='#contact-us'>
           {'{ Adapt your business }'}
         </Button>
       </Grid>
