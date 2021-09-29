@@ -109,7 +109,8 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: ['video', 'serif'].join(','),
+    // fontFamily: ['video', 'sans-serif'].join(','),
+    fontFamily: ['Sarpanch', 'sans-serif'].join(','),
     fontStyle: 'normal',
     h1: {
       fontWeight: 400,
@@ -151,29 +152,29 @@ const theme = createTheme({
     h6: {
       fontWeight: 600,
       fontSize: '18px',
-      fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
+      fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
     },
     techName: {
       fontWeight: 400,
       fontSize: '24px',
       padding: '1rem',
-      fontFamily: ['video', 'serif'].join(','),
+      fontFamily: ['Sarpanch', 'sans-serif'].join(','),
     },
     occupation: {
       fontWeight: 300,
       fontSize: '18px',
-      fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
+      fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
     },
     body1: {
       fontWeight: 400,
       fontSize: '1.3rem',
-      fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
+      fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
     },
     body2: {
       fontWeight: 400,
       fontSize: '18px',
       lineHeight: '30px',
-      fontFamily: ['source-sans-pro', 'sans-serif'].join(','),
+      fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
     },
     button: {
       fontWeight: 400,

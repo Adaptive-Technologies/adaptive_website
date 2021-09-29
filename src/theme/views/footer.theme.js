@@ -12,8 +12,11 @@ const useStyles = makeStyles((theme) => ({
   outerWave: {
     position: 'absolute',
     backgroundColor: '#00000000',
-    bottom: '0px',
+    bottom: '-22px',
     marginBottom: '0px',
+    [theme.breakpoints.up('uwhd')]: {
+      bottom: '-5px',
+    },
   },
   circleBox: {
     position: 'absolute',

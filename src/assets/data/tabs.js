@@ -4,8 +4,8 @@ const tabs = [
     label: 'home',
   },
   {
-    name: 'our-approach',
-    label: 'our approach',
+    name: 'our-process',
+    label: 'our process',
   },
   {
     name: 'technologies',
