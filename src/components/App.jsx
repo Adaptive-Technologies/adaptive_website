@@ -22,8 +22,8 @@ const App = () => {
         <ClientsSection />
         <Technologies />
         <Box className={classes.backgroundGradient}>
-        <AboutUs />
-        <ContactUs />
+          <AboutUs />
+          <ContactUs />
         </Box>
         <Footer />
       </Box>
