@@ -3,7 +3,7 @@ import staffCards from '../assets/data/staffCards'
 import { Box, Typography, Container, Grid, CardMedia } from '@mui/material'
 import useStyles from '../theme/views/aboutUs.theme'
 
-const AboutUs = () => {
+const AboutUs = ({ id }) => {
   const classes = useStyles()
 
   const staffSection = staffCards.map((staffCard, index) => {
@@ -56,7 +56,7 @@ const AboutUs = () => {
   })
 
   return (
-    <Box data-cy='about-us' className={classes.section}>
+    <Box data-cy='about-us' className={classes.section} id={id}>
       <Container maxWidth='lg'>
         <Typography data-cy='header' variant='h2'>
           {'< about us />'}

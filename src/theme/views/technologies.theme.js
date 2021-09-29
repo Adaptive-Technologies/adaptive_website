@@ -6,17 +6,18 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     padding: '32px 8px',
     [theme.breakpoints.up('sm')]: {
-      padding: '32px 10%',
+      padding: '100px 10%',
     },
   },
   gridContainer: {
+    marginTop: '50px',
     maxWidth: '1280px',
-    margin: 'auto'
+    margin: 'auto',
   },
   technologyCard: {
     minWidth: '80px',
     minHeight: '100px',
-    paddingTop: '16px'
+    paddingTop: '16px',
   },
   icon: {
     height: '80px',

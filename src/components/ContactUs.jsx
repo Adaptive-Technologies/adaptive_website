@@ -8,7 +8,7 @@ const ContactUs = ({ id }) => {
   const classes = useStyles()
 
   return (
-    <Box id={id}>
+    <Box className={classes.section} id={id}>
       <Box className={classes.headerText}>
         <Typography
           variant='h2'
