@@ -14,10 +14,12 @@ describe('Visitor can see technologies section', () => {
         cy.get('[data-cy=technologies-section]').within(() => {
           cy.get('[data-cy=header]').should('contain.text', '< technologies />')
           cy.get('[data-cy=technology]').should('have.length', 6)
-          cy.get('[data-cy=technology]').first().within(() => {
-            cy.get('[data-cy=icon]').should('be.visible')
-            cy.get('[data-cy=name]').should('contain.text', 'Cypress')
-          })
+          cy.get('[data-cy=technology]')
+            .first()
+            .within(() => {
+              cy.get('[data-cy=icon]').should('be.visible')
+              cy.get('[data-cy=name]').should('contain.text', 'Cypress')
+            })
         })
       })
     })
