@@ -96,6 +96,13 @@ const theme = createTheme({
       ],
     },
   },
+  breakpoints: {
+    values: {
+      xxl: 1919,
+      uwhd: 2500,
+      kkkk: 3330,
+    },
+  },
   typography: {
     fontFamily: ['video', 'serif'].join(','),
     fontStyle: 'normal',
