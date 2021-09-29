@@ -13,7 +13,7 @@ describe('Visitor can see application header', () => {
 
       it('is expected to have the navigation menu', () => {
         cy.get('[data-cy=home]').should('contain', '< home />')
-        cy.get('[data-cy=our-approach]').should('contain', '< our approach />')
+        cy.get('[data-cy=our-process]').should('contain', '< our process />')
         cy.get('[data-cy=technologies]').should('contain', '< technologies />')
         cy.get('[data-cy=about]').should('contain', '< about />')
         cy.get('[data-cy=contact-us]').should('contain', '< contact us />')

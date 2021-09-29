@@ -8,7 +8,7 @@ import lab6 from '../assets/icons/vials/lab6.svg'
 import { Grid, Typography, Box } from '@mui/material'
 import useStyles from '../theme/views/technologies.theme'
 
-const Technologies = () => {
+const Technologies = ({ id }) => {
   const classes = useStyles()
   const technologies = [
     { icon: lab1, name: 'Cypress', color: '#919191', id: 1 },
@@ -38,7 +38,7 @@ const Technologies = () => {
   )
 
   return (
-    <Box data-cy='technologies-section' className={classes.section}>
+    <Box data-cy='technologies-section' className={classes.section} id={id}>
       <Typography data-cy='header' variant='h2'>
         {'< technologies />'}
       </Typography>

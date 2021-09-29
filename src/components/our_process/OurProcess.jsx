@@ -3,11 +3,11 @@ import { Box, Typography } from '@mui/material'
 import useStyles from '../../theme/views/our_process/process.theme'
 import CustomAccordion from './CustomAccordion'
 
-const OurProcess = () => {
+const OurProcess = ({ id }) => {
   const classes = useStyles()
   return (
     <>
-      <Box data-cy='step-0' className={classes.box}>
+      <Box data-cy='step-0' className={classes.box} id={id}>
         <Typography
           data-cy='our-process'
           variant='h2'
