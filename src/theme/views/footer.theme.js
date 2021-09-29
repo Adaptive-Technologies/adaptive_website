@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#00000000',
     bottom: '0px',
     marginBottom: '0px',
-    
   },
   circleBox: {
     position: 'absolute',
@@ -30,12 +29,26 @@ const useStyles = makeStyles((theme) => ({
       bottom: '50px',
     },
     [theme.breakpoints.up('xl')]: {
-      bottom: '90px',
+      bottom: '40px',
+    },
+    [theme.breakpoints.up('xxl')]: {
+      bottom: '60px',
+    },
+    [theme.breakpoints.up('uwhd')]: {
+      bottom: '80px',
+    },
+    [theme.breakpoints.up('kkkk')]: {
+      bottom: '100px',
     },
   },
   circle1: {
-   
-
+    display: 'none',
+    [theme.breakpoints.up('sm')]: {
+      display: 'flex',
+    },
+    [theme.breakpoints.up('xl')]: {
+      display: 'none',
+    },
   },
   circle2: {
     display: 'none',

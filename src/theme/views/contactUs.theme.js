@@ -10,6 +10,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       paddingBottom: '400px',
     },
+    [theme.breakpoints.up('xxl')]: {
+      paddingBottom: '500px',
+    },
+    [theme.breakpoints.up('kkkk')]: {
+      paddingBottom: '600px',
+    },
   },
   headerText: {
     display: 'flex',
