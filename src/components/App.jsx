@@ -8,6 +8,7 @@ import Hero from './Hero'
 import OurProcess from './our_process/OurProcess'
 import ClientsSection from './our_clients/ClientsSection'
 import Technologies from './Technologies'
+import AboutUs from './AboutUs'
 import Footer from './footer/Footer'
 
 const App = () => {
@@ -20,7 +21,10 @@ const App = () => {
         <OurProcess />
         <ClientsSection />
         <Technologies />
-        <ContactUs />
+        <Box className={classes.backgroundGradient}>
+          <AboutUs />
+          <ContactUs />
+        </Box>
         <Footer />
       </Box>
     </>
