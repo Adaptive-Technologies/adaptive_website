@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     maxWidth: '100%',
     height: '30px',
-    padding: '32px 16px',
+    padding: '40px 16px 40px 16px',
     justifyContent: 'space-between',
     [theme.breakpoints.up('lg')]: {
       padding: '40px',
@@ -39,11 +39,9 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 'auto',
   },
   tabsLeft: {
-    paddingTop: '10px',
     justifyContent: 'flex-start',
   },
   tabsRight: {
-    paddingTop: '10px',
     justifyContent: 'flex-end',
   },
 }))
