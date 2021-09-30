@@ -67,9 +67,9 @@ const AboutUs = ({ id }) => {
           className={classes.description}>
           Adaptive Labs Nordics was founded by a group of passionate developers
           and designers. With a goal to build a company that puts its customers
-          needs first through Agile Methodologies and close partnerships. Using
+          needs first through Agile Methodologies and close partnerships. <br></br><br></br> Using
           automated testing to deliver high quality full stack applications on
-          time and within scope. We use agile methodologies and unprecedented
+          time and within scope. We use agile and unprecedented
           creativity to meet your technical needs. Driving innovation and the
           future by teaching future developers through Craft Academy.
         </Typography>
