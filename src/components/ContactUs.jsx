@@ -1,6 +1,8 @@
 import React from 'react'
 import { Box } from '@mui/system'
 import { Container, Grid, Link, Typography } from '@mui/material'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+
 import useStyles from '../theme/views/contactUs.theme'
 import ContactForm from './ContactForm'
 
@@ -39,11 +41,10 @@ const ContactUs = ({ id }) => {
               Email: info@adaptivelabsnordics.se
             </Typography>
             <Box className={classes.links}>
-              <Typography variant='h4'>Links:</Typography>
               <Link
                 target='_blank'
                 href='https://www.linkedin.com/company/adaptive-labs-nordics/'>
-                <Typography variant='h4'>Linkedin</Typography>
+                <LinkedInIcon />
               </Link>
             </Box>
           </Container>
