@@ -5,9 +5,12 @@ import { HashLink } from 'react-router-hash-link'
 
 const Hero = ({ id }) => {
   const classes = useStyles()
-  const BackgroundHighVideo = React.lazy(() => import('./hero/BackgroundHighVideo'))
-  const MediumResBGVideo = React.lazy(() => import('./hero/BackgroundMediumVideo'))
-  const SuperLowResBGVideo = React.lazy(() => import('./hero/BackgroundLowVideo'))
+  const MediumResBGVideo = React.lazy(() =>
+    import('./hero/BackgroundMediumVideo')
+  )
+  const SuperLowResBGVideo = React.lazy(() =>
+    import('./hero/BackgroundLowVideo')
+  )
 
   const backgroundGradient = <Box className={classes.backgroundGradient} />
 
@@ -17,16 +20,10 @@ const Hero = ({ id }) => {
     </Suspense>
   )
 
-  const mediumFallback = (
-    <Suspense fallback={lowFallback}>
-      <MediumResBGVideo />
-    </Suspense>
-  )
-
   return (
     <Box className={classes.section} id={id}>
-      <Suspense fallback={mediumFallback}>
-        <BackgroundHighVideo />
+      <Suspense fallback={lowFallback}>
+        <MediumResBGVideo />
       </Suspense>
 
       <Grid
