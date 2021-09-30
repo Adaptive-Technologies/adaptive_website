@@ -19,8 +19,8 @@ const ContactUs = ({ id }) => {
           {'< Contact us />'}
         </Typography>
       </Box>
-      <Grid container lg={12} className={classes.container}>
-        <Grid item container className={classes.containerGetInTouch} lg={4}>
+      <Grid container className={classes.container}>
+        <Grid item className={classes.containerGetInTouch} lg={4}>
           <Container className={classes.containerGetInTouch}>
             <Typography
               className={classes.contactUsSubHeader}
@@ -51,7 +51,6 @@ const ContactUs = ({ id }) => {
         </Grid>
         <Grid
           item
-          container
           sm={8}
           md={6}
           lg={4}

@@ -27,6 +27,15 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
     backgroundColor: 'rgba(0, 0, 0, 0.1)',
   },
+  overlayContent: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    paddingBottom: '150px',
+    [theme.breakpoints.up('md')]: {
+      paddingBottom: '100px'
+    },
+  },
   backgroundGradient: {
     width: '100%',
     height: '100%',

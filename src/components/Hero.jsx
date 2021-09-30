@@ -1,7 +1,8 @@
 import React, { Suspense } from 'react'
-import { Box, Button, Grid, Typography } from '@mui/material'
-import useStyles from '../theme/views/hero.theme'
 import { HashLink } from 'react-router-hash-link'
+import { Box, Button, Grid, Typography } from '@mui/material'
+
+import useStyles from '../theme/views/hero.theme'
 
 const Hero = ({ id }) => {
   const classes = useStyles()
@@ -31,17 +32,19 @@ const Hero = ({ id }) => {
         className={classes.overlay}
         direction='column'
         special='center'>
-        <Typography data-cy='slogan' variant='h1'>
-          Digital transformation is a game changer
-        </Typography>
-        <Button
-          data-cy='contact-us-btn'
-          special='gradient'
-          component={HashLink}
-          smooth
-          to='#contact-us'>
-          {'{ Adapt your business }'}
-        </Button>
+        <Box className={classes.overlayContent}>
+          <Typography data-cy='slogan' variant='h1'>
+            Digital transformation is a game changer
+          </Typography>
+          <Button
+            data-cy='contact-us-btn'
+            special='gradient'
+            component={HashLink}
+            smooth
+            to='#contact-us'>
+            {'{ Adapt your business }'}
+          </Button>
+        </Box>
       </Grid>
     </Box>
   )
