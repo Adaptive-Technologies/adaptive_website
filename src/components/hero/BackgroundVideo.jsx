@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
-import heroVideo from '../../assets/videos/HeroLowAdaptiveBitrate.mp4'
+import heroVideo from '../../assets/videos/HeroMediumBitRate.mp4'
 
 const BackgroundVideo = () => {
   return (
