@@ -40,10 +40,12 @@ const useStyles = makeStyles((theme) => ({
     display: 'block',
   },
   bodyFirst: {
+    textAlign: 'center',
     alignSelf: 'flex-start',
     paddingTop: '60px',
   },
   body: {
+    textAlign: 'center',
     alignSelf: 'flex-start',
     paddingTop: '30px',
   },

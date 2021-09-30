@@ -24,7 +24,8 @@ const useStyles = makeStyles((theme) => ({
     textTransform: 'uppercase',
   },
   body: {
-    alignSelf: 'flex-start',
+    textAlign: 'center',
+    alignSelf: 'center',
     paddingBottom: '30px',
   },
 }))
