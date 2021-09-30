@@ -76,17 +76,15 @@ const CustomAccordion = () => {
             className={classes.bodyFirst}>
             During this phase we will deal with HiFi’s and technical analysis.
             Basically the how it will look and how it will work.
-          </Typography>
-          <Typography data-cy='body-2' variant='body2' className={classes.body}>
             We will conduct user testing to make sure the UX/UI creates a
             friendly and welcoming experience for the user.
           </Typography>
-          <Typography data-cy='body-3' variant='body2' className={classes.body}>
+          <Typography data-cy='body-2' variant='body2' className={classes.body}>
             You will receive a set of links to these Hifi’s where you can look
             around make notes and comments before we arrange a meeting with you
             to go through these.
           </Typography>
-          <Typography data-cy='body-4' variant='body2' className={classes.body}>
+          <Typography data-cy='body-3' variant='body2' className={classes.body}>
             Hopefully all is in line with what you asked for and we can move
             forward.
           </Typography>
