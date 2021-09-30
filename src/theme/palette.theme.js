@@ -1,6 +1,6 @@
 const palette = {
   primary: {
-    main: '#8E0E49',
+    main: '#A581DD',
     contrastText: '#fff',
   },
   secondary: {
@@ -12,7 +12,7 @@ const palette = {
     contrastText: '#fff',
   },
   fourth: {
-    main: '#A581DD',
+    main: '#8E0E49',
     contrastText: '#fff',
   },
   fifth: {
