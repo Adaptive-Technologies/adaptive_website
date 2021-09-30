@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     minHeight: '246px',
     maxHeight: 'auto',
-    padding: '20% 40px',
+    padding: '20% 26px',
 
     [theme.breakpoints.up('md')]: {
       padding: '50px 20%',
