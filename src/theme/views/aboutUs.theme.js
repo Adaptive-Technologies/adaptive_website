@@ -46,6 +46,7 @@ const useStyles = makeStyles((theme) => ({
   },
   description: {
     [theme.breakpoints.up('xs')]: {
+      textAlign: 'center',
       padding: '1rem',
     },
     [theme.breakpoints.up('md')]: {
