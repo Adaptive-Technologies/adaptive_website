@@ -27,7 +27,7 @@ const theme = createTheme({
     MuiOutlinedInput: {
       styleOverrides: {
         notchedOutline: {
-          borderColor: '#fff',
+          borderColor: '#A581DD',
         },
       },
     },
@@ -125,7 +125,7 @@ const theme = createTheme({
     },
     h2: {
       fontWeight: 400,
-      fontSize: '48px',
+      fontSize: '40px',
       letterSpacing: '-0.96px',
       '@media (max-width:800px)': {
         fontSize: '30px',

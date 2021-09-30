@@ -5,24 +5,19 @@ const useStyles = makeStyles((theme) => ({
     position: 'relative',
     display: 'flex',
     justifyContent: 'center',
-    minHeight: '500px',
+    minHeight: '700px',
   },
   background: {
-    height: '70vh',
-    minHeight: '500px',
     [theme.breakpoints.up('lg')]: {
-      height: '80vh',
+      maxHeight: '800px',
     },
   },
   contentBox: {
     position: 'absolute',
     flexDirection: 'column',
     marginTop: '15%',
-    [theme.breakpoints.up('sm')]: {
-      marginTop: '15%',
-    },
     [theme.breakpoints.up('md')]: {
-      marginTop: '15%',
+      marginTop: '10%',
     },
     [theme.breakpoints.up('lg')]: {
       marginTop: '5%',
@@ -35,14 +30,25 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   gridItem: {
-    paddingBottom: '36px',
+    paddingBottom: '50px',
   },
   logo: {
-    maxHeight: '75px',
+    maxHeight: '95px',
     maxWidth: '75px',
     margin: 'auto',
     [theme.breakpoints.up('md')]: {
-      maxHeight: '100px',
+      maxHeight: '120px',
+      maxWidth: '100px',
+      margin: 'auto',
+    },
+  },
+  logoSmaller: {
+    maxHeight: '75px',
+    maxWidth: '75px',
+    margin: 'auto',
+    padding: '10px',
+    [theme.breakpoints.up('md')]: {
+      maxHeight: '120px',
       maxWidth: '100px',
       margin: 'auto',
     },
