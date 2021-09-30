@@ -6,6 +6,8 @@ import background from '../../assets/images/BgClients_1.jpg'
 import FlexCoast from '../../assets/images/Favicon_Flexcoast.svg'
 import Timotuz from '../../assets/images/logo_no_text_green.svg'
 import KCSC from '../../assets/images/Symbol_Logo_Colour.svg'
+import Walborg from '../../assets/images/walborg_white.svg'
+import Artdom from '../../assets/images/artdom_white.svg'
 
 const ClientsSection = () => {
   const classes = useStyles()
@@ -37,7 +39,7 @@ const ClientsSection = () => {
           </Grid>
           <Grid className={classes.gridItem} item xs={4}>
             <CardMedia
-              className={classes.logo}
+              className={classes.logoSmaller}
               data-cy='logo-2'
               component='img'
               image={Timotuz}
@@ -51,6 +53,24 @@ const ClientsSection = () => {
               component='img'
               image={KCSC}
               alt='KCSC logo'
+            />
+          </Grid>
+          <Grid className={classes.gridItem} item xs={4}>
+            <CardMedia
+              className={classes.logo}
+              data-cy='logo-4'
+              component='img'
+              image={Walborg}
+              alt='Walborg logo'
+            />
+          </Grid>
+          <Grid className={classes.gridItem} item xs={4}>
+            <CardMedia
+              className={classes.logo}
+              data-cy='logo-5'
+              component='img'
+              image={Artdom}
+              alt='Artdom logo'
             />
           </Grid>
         </Grid>
