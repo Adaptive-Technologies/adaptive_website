@@ -5,7 +5,7 @@ import useStyles from '../../theme/views/clients.theme'
 import background from '../../assets/images/BgClients_1.jpg'
 import FlexCoast from '../../assets/images/Favicon_Flexcoast.svg'
 import Timotuz from '../../assets/images/logo_no_text_green.svg'
-import KCSC from '../../assets/images/Symbol_Logo_Colour.png'
+import KCSC from '../../assets/images/Symbol_Logo_Colour.svg'
 
 const ClientsSection = () => {
   const classes = useStyles()
