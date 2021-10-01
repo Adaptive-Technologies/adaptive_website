@@ -3,16 +3,31 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@hookform/resolvers": "^2.8.1",
+    "@mui/icons-material": "^5.0.1",
+    "@mui/material": "^5.0.1",
+    "@mui/styles": "^5.0.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "gooey-react": "^1.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.15.4",
+    "react-player": "^2.9.0",
+    "react-router-dom": "^5.3.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "react-spring": "^9.2.4",
+    "web-vitals": "^1.0.1",
+    "yup": "^0.32.9"
   },
   "scripts": {
-    "start": "PORT=3001 react-scripts start ",
+    "start": "REACT_APP_STAGE=dev PORT=3001 react-scripts start ",
+    "build:dev": "REACT_APP_STAGE=dev react-scripts build && echo '/* /index.html 200' | cat >build/_redirects",
+    "build:prod": "REACT_APP_STAGE=production react-scripts build && echo '/* /index.html 200' | cat >build/_redirects",
     "start:silent": "PORT=3001 BROWSER=none react-scripts start",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
@@ -38,7 +53,7 @@
     ]
   },
   "devDependencies": {
-    "start-server-and-test": "^1.14.0",
-    "cypress": "^8.4.0"
+    "cypress": "^8.4.0",
+    "start-server-and-test": "^1.14.0"
   }
 }
