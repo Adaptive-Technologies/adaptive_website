@@ -20,7 +20,7 @@ const theme = createTheme({
     MuiInputLabel: {
       styleOverrides: {
         root: {
-          color: '#fff',
+          color: '#FFD9F3',
         },
       },
     },
@@ -34,7 +34,7 @@ const theme = createTheme({
     MuiTab: {
       styleOverrides: {
         root: {
-          color: '#fff',
+          color: '#FFD9F3',
           fontSize: '24px',
           textTransform: 'uppercase',
           letterSpacing: '-0.48px',
@@ -70,7 +70,7 @@ const theme = createTheme({
     MuiSvgIcon: {
       styleOverrides: {
         root: {
-          color: '#fff',
+          color: '#FFD9F3',
           fontSize: '3rem',
         },
       },
@@ -114,6 +114,7 @@ const theme = createTheme({
     h1: {
       fontWeight: 400,
       fontSize: '60px',
+      color: '#FFD9F3',
       '@media (max-width:1280px)': {
         fontSize: '48px',
       },
@@ -126,6 +127,7 @@ const theme = createTheme({
     h2: {
       fontWeight: 400,
       fontSize: '40px',
+      color: '#FFD9F3',
       letterSpacing: '-0.96px',
       '@media (max-width:800px)': {
         fontSize: '30px',
@@ -137,6 +139,7 @@ const theme = createTheme({
     h3: {
       fontWeight: 700,
       fontSize: '30px',
+      color: '#FFD9F3',
       '@media (max-width:800px)': {
         fontSize: '24px',
       },
@@ -144,6 +147,7 @@ const theme = createTheme({
     h4: {
       fontWeight: 700,
       fontSize: '24px',
+      color: '#FFD9F3',
       '@media (max-width:800px)': {
         fontSize: '20px',
       },
@@ -151,6 +155,7 @@ const theme = createTheme({
     h6: {
       fontWeight: 600,
       fontSize: '18px',
+      color: '#FFD9F3',
       fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
     },
     techName: {
@@ -162,17 +167,20 @@ const theme = createTheme({
     occupation: {
       fontWeight: 300,
       fontSize: '18px',
+      color: '#FFD9F3',
       fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
     },
     body1: {
       fontWeight: 400,
       fontSize: '1.3rem',
+      color: '#FFD9F3',
       fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
     },
     body2: {
       fontWeight: 400,
       fontSize: '18px',
       lineHeight: '30px',
+      color: '#FFD9F3',
       fontFamily: ['Source Sans Pro', 'sans-serif'].join(','),
     },
     button: {
@@ -192,6 +200,7 @@ const theme = createTheme({
     Tabs: {
       fontWeight: 400,
       fontSize: '24px',
+      color: '#FFD9F3',
       letterSpacing: '-0.48px',
     },
   },
