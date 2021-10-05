@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   image: {
     maxWidth: '252px',
     objectFit: 'contain',
-    border: '4px solid white',
+    border: '4px solid #FFD9F3',
     borderRadius: '100%',
     margin: 'auto',
   },
