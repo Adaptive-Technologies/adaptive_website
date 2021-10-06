@@ -19,7 +19,7 @@ describe('Vistor can see our process', () => {
             )
             cy.get('[data-cy=body-1]').should(
               'contain.text',
-              'Here at Adaptive Labs Nordics we work with the vision that everything is changing and we are here to help you adapt to these changes. Below you can read about our 4 step plan in our process'
+              'Here at Adaptive Labs we work with the vision that everything is changing.'
             )
           })
         })
@@ -37,7 +37,7 @@ describe('Vistor can see our process', () => {
           cy.get('[data-cy=accordionDetails-1]').within(() => {
             cy.get('[data-cy=body-1]').should(
               'contain.text',
-              'First we arrange a meeting with you, in person or over the web.'
+              'First we arrange a meeting with you, in person or remote, we\'re flexible.'
             )
             cy.get('[data-cy=body-2]').should(
               'contain.text',
@@ -120,7 +120,7 @@ describe('Vistor can see our process', () => {
           cy.get('[data-cy=accordionDetails-4]').within(() => {
             cy.get('[data-cy=body-1]').should(
               'contain.text',
-              'The time has come for us to deliver the final application'
+              'The time has come for the final application delivery. We\'ll give you a guided tour of your application, answer your questions, supply any documentation and deploy the site on your domain for the world to see.'
             )
             cy.get('[data-cy=body-2]').should(
               'contain.text',
