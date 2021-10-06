@@ -35,14 +35,17 @@ const Hero = ({ id }) => {
         <Box className={classes.overlayContent}>
           <Typography data-cy='slogan' variant='h1'>
             Digital transformation is a game changer
+            <br></br>
+            <span className={classes.subHeader}>WE HELP YOU ADAPT</span>
           </Typography>
+
           <Button
             data-cy='contact-us-btn'
             special='gradient'
             component={HashLink}
             smooth
             to='#contact-us'>
-            {'{ Adapt your business }'}
+            {'{ Get in touch }'}
           </Button>
         </Box>
       </Grid>
