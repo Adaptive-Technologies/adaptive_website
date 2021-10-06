@@ -17,7 +17,7 @@ describe('Visitor can see hero section', () => {
         )
         cy.get('[data-cy=contact-us-btn').should(
           'contain.text',
-          '{ Adapt your business }'
+          '{ Get in touch }'
         )
       })
     })

@@ -36,7 +36,7 @@ const Hero = ({ id }) => {
           <Typography data-cy='slogan' variant='h1'>
             Digital transformation is a game changer
             <br></br>
-            <span className={classes.subHeader}>WE HELP YOU ADAPT</span>
+            <span className={classes.subHeader}>We help you Adapt</span>
           </Typography>
 
           <Button
