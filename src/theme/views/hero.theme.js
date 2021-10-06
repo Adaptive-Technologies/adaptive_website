@@ -33,13 +33,22 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     paddingBottom: '150px',
     [theme.breakpoints.up('md')]: {
-      paddingBottom: '100px'
+      paddingBottom: '100px',
     },
   },
   backgroundGradient: {
     width: '100%',
     height: '100%',
     background: 'linear-gradient(90deg, #a43072 30%,  #574f8d 70%)',
+  },
+
+  subHeader: {
+    [theme.breakpoints.up('xs')]: {
+      fontSize: '24px',
+    },
+    [theme.breakpoints.up('lg')]: {
+      fontSize: '40px',
+    },
   },
 }))
 
