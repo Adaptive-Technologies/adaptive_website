@@ -37,15 +37,15 @@ describe('Vistor can see our process', () => {
           cy.get('[data-cy=accordionDetails-1]').within(() => {
             cy.get('[data-cy=body-1]').should(
               'contain.text',
-              'First we arrange a meeting with you, in person or remote, we\'re flexible.'
+              "First we will arrange a meeting with you, in person or remote, we're flexible."
             )
             cy.get('[data-cy=body-2]').should(
               'contain.text',
-              'During the meeting we want to get to know you better and what you'
+              'During the meeting, we want to get to know you and the expectations on your application.'
             )
             cy.get('[data-cy=body-3]').should(
               'contain.text',
-              'Once you’re happy with the LoFi’s we'
+              "Once you're happy, we can move forward with the design phase."
             )
           })
         })
@@ -64,15 +64,17 @@ describe('Vistor can see our process', () => {
           cy.get('[data-cy=accordionDetails-2]').within(() => {
             cy.get('[data-cy=body-1]').should(
               'contain.text',
-              'During this phase we will deal with HiFi’s and technical analysis.'
+              'During this phase we deal with generating a detailed draft or'
             )
             cy.get('[data-cy=body-2]').should(
               'contain.text',
-              'You will receive a set of links to these Hifi’s where you can look around make notes'
+              'The',
+              "HiFi's",
+              'will be shared via a link which gives the possibility to navigate the application and create comments and notes. A final meeting is arranged to review aforementioned.'
             )
             cy.get('[data-cy=body-3]').should(
               'contain.text',
-              'Hopefully all is in line with what you asked for and we can move forward.'
+              'Hopefully everything is in order and development can begin.'
             )
           })
         })
@@ -91,19 +93,19 @@ describe('Vistor can see our process', () => {
           cy.get('[data-cy=accordionDetails-3]').within(() => {
             cy.get('[data-cy=body-1]').should(
               'contain.text',
-              'Here is where those designs become a reality. We work from the HiFi’s we agreed on'
+              'Here is where those designs become reality. We work from the agreed upon'
             )
             cy.get('[data-cy=body-2]').should(
               'contain.text',
-              'Now we all know things change, which is why during the development we’ll have'
+              'As Heraclitus said "change is the only constant in life". Which is why'
             )
             cy.get('[data-cy=body-3]').should(
               'contain.text',
-              'We use something called automated testing, which means manual testing is reduced exponentially'
+              'We use automated testing, which reduces bugs, improves maintainability and a higher standard of code. Less problems for you and less head scratching for us'
             )
             cy.get('[data-cy=body-4]').should(
               'contain.text',
-              'That’s it time to move forward.'
+              'That’s it, time to move forward.'
             )
           })
         })
@@ -120,11 +122,11 @@ describe('Vistor can see our process', () => {
           cy.get('[data-cy=accordionDetails-4]').within(() => {
             cy.get('[data-cy=body-1]').should(
               'contain.text',
-              'The time has come for the final application delivery. We\'ll give you a guided tour of your application, answer your questions, supply any documentation and deploy the site on your domain for the world to see.'
+              "The time has come for the final application delivery. We'll give you a guided tour of your application, answer your questions, supply any documentation and deploy the site on your domain for the world to see."
             )
             cy.get('[data-cy=body-2]').should(
               'contain.text',
-              'Thats the Adaptive Process'
+              "That's the Adaptive Process"
             )
           })
         })
