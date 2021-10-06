@@ -39,17 +39,16 @@ const CustomAccordion = () => {
             data-cy='body-1'
             variant='body2'
             className={classes.bodyFirst}>
-            First we arrange a meeting with you, in person or over the web.
+            First we will arrange a meeting with you, in person or remote, we're
+            flexible.
           </Typography>
           <Typography data-cy='body-2' variant='body2' className={classes.body}>
-            During the meeting we want to get to know you better and what you
-            want from you application. Once we have gotten an idea of what you
-            want and who you are, we will go away and work on the LoFi’s and
-            arrange a second meeting for delivery.
+            During the meeting, we want to get to know you and the expectations
+            on your application. This provides us with core information to
+            deliver a first draft or "LoFi".
           </Typography>
           <Typography data-cy='body-3' variant='body2' className={classes.body}>
-            Once you’re happy with the LoFi’s we have produce we can move
-            forward to the next phase.
+            Once you're happy, we can move forward with the design phase.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -74,19 +73,18 @@ const CustomAccordion = () => {
             data-cy='body-1'
             variant='body2'
             className={classes.bodyFirst}>
-            During this phase we will deal with HiFi’s and technical analysis.
-            Basically the how it will look and how it will work.
-            We will conduct user testing to make sure the UX/UI creates a
-            friendly and welcoming experience for the user.
+            During this phase we deal with generating a detailed draft or "HiFi"
+            and application architecture. How it will look and work on
+            completion. Conducting user testing to verify a friendly and
+            welcoming UI/UX.
           </Typography>
           <Typography data-cy='body-2' variant='body2' className={classes.body}>
-            You will receive a set of links to these Hifi’s where you can look
-            around make notes and comments before we arrange a meeting with you
-            to go through these.
+            The "HiFi's" will be shared via a link which gives the possibility
+            to navigate the application and create comments and notes. A final
+            meeting is arranged to review aforementioned "HiFi's".
           </Typography>
           <Typography data-cy='body-3' variant='body2' className={classes.body}>
-            Hopefully all is in line with what you asked for and we can move
-            forward.
+            Hopefully everything is in order and development can begin.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -111,24 +109,23 @@ const CustomAccordion = () => {
             data-cy='body-1'
             variant='body2'
             className={classes.bodyFirst}>
-            Here is where those designs become a reality. We work from the
-            HiFi’s we agreed on and by the time we are done they should look
-            almost identical. A link to a development site will be sent, so you
-            can always check in on the progress we are making.
+            Here is where those designs become reality. We work from the agreed
+            upon "Hifi's", on completion the application should be almost
+            identical to these. During this phase we deploy a development site,
+            you will receive a link, so you can monitor the progress made.
           </Typography>
           <Typography data-cy='body-2' variant='body2' className={classes.body}>
-            Now we all know things change, which is why during the development
-            we’ll have small checkins to make sure you’re happy. Here we can
-            discuss any requested changes and how to go about them.
+            As Heraclitus said "change is the only constant in life". Which is
+            why we'll have small check-in's to make sure you're happy and
+            discuss any changes and how to approach them.
           </Typography>
           <Typography data-cy='body-3' variant='body2' className={classes.body}>
-            We use something called automated testing, which means manual
-            testing is reduced exponentially, it means less bugs and overall a
-            higher standard of code, which means less problems for you and less
-            head scratching for us.
+            We use automated testing, which reduces bugs, improves
+            maintainability and a higher standard of code. Less problems for you
+            and less head scratching for us.
           </Typography>
           <Typography data-cy='body-4' variant='body2' className={classes.body}>
-            That’s it time to move forward.
+            That’s it, time to move forward.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -153,13 +150,13 @@ const CustomAccordion = () => {
             data-cy='body-1'
             variant='body2'
             className={classes.bodyFirst}>
-            The time has come for us to deliver the final application, we’ll
-            walk you through the site one last time, answer questions, deliver
-            any documentation that’s needed and push it out to your live domain
-            for the world to see.
+            The time has come for the final application delivery. We'll give you
+            a guided tour of your application, answer your questions, supply any
+            documentation and deploy the site on your domain for the world to
+            see.
           </Typography>
           <Typography data-cy='body-2' variant='body2' className={classes.body}>
-            Thats the Adaptive Process
+            That's the Adaptive Process
           </Typography>
         </AccordionDetails>
       </Accordion>
