@@ -44,10 +44,10 @@ const useStyles = makeStyles((theme) => ({
 
   subHeader: {
     [theme.breakpoints.up('xs')]: {
-      fontSize: '24px',
+      fontSize: '38px',
     },
     [theme.breakpoints.up('lg')]: {
-      fontSize: '40px',
+      fontSize: '60px',
     },
   },
 }))
