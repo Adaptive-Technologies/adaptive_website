@@ -1,4 +1,4 @@
-export default typography = {
+const typography = {
   fontFamily: ['Sarpanch', 'sans-serif'].join(','),
   fontStyle: 'normal',
   h1: {
@@ -94,3 +94,5 @@ export default typography = {
     letterSpacing: '-0.48px',
   },
 }
+
+export default typography

@@ -1,4 +1,4 @@
-export default components = {
+const components = {
   MuiTextField: {
     styleOverrides: {
       root: {
@@ -90,3 +90,5 @@ export default components = {
     ],
   },
 }
+
+export default components
