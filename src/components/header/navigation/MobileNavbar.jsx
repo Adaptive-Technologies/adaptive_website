@@ -1,15 +1,9 @@
 import React, { useState } from 'react'
-import {
-  Box,
-  SwipeableDrawer,
-  IconButton,
-} from '@mui/material'
+import { Box, SwipeableDrawer, IconButton } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import useStyles from '../../../theme/views/navbar.theme'
 import Adaptive_logo from '../../../assets/images/Adaptive_logo_WHITE_PINK.png'
 
-const MobileNavbar = ({navigationMenu}) => {
-  const classes = useStyles()
+const MobileNavbar = ({ navigationMenu, classes }) => {
   const [drawerOpen, setDrawerOpen] = useState(false)
 
   return (

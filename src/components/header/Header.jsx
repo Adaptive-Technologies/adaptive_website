@@ -1,14 +1,11 @@
 import React from 'react'
-import {
-  Box,
-  useMediaQuery,
-} from '@mui/material'
-import useStyles from '../../theme/views/navbar.theme'
-import buildNavigationMenu from '../../modules/buildNavigationMenu'
+import { Box, useMediaQuery } from '@mui/material'
 import DesktopNavbar from './navigation/DesktopNavbar'
 import MobileNavbar from './navigation/MobileNavbar'
 import NavTab from './navigation/NavTab'
+import buildNavigationMenu from '../../modules/buildNavigationMenu'
 import tabData from '../../assets/data/tabData'
+import useStyles from '../../theme/views/navbar.theme'
 
 const Navbar = () => {
   const classes = useStyles()
@@ -18,9 +15,9 @@ const Navbar = () => {
   return (
     <Box className={classes.section}>
       {isMobile ? (
-        <MobileNavbar navigationMenu={navigationMenu}/>
+        <MobileNavbar navigationMenu={navigationMenu} classes={classes} />
       ) : (
-        <DesktopNavbar navigationMenu={navigationMenu}/>
+        <DesktopNavbar navigationMenu={navigationMenu} classes={classes} />
       )}
     </Box>
   )

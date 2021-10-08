@@ -1,15 +1,8 @@
 import React from 'react'
-import {
-  CardMedia,
-  Box,
-  Grid,
-} from '@mui/material'
-import useStyles from '../../../theme/views/navbar.theme'
+import { CardMedia, Box, Grid } from '@mui/material'
 import Adaptive_logo from '../../../assets/images/Adaptive_logo_WHITE_PINK.png'
 
-const DesktopNavbar = ({navigationMenu}) => {
-  const classes = useStyles()
-
+const DesktopNavbar = ({ navigationMenu, classes }) => {
   return (
     <Box data-cy='navbar' className={classes.container}>
       <Grid item container lg={5} className={classes.tabsLeft}>
