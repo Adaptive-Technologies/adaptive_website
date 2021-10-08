@@ -1,5 +1,5 @@
 import tabs from '../assets/data/tabs'
-import NavTab from '../components/navigation/navTabs/NavTab'
+import NavTab from '../components/header/navbar/navTabs/NavTab'
 
 const navbarHelper = {
   buildTabs() {

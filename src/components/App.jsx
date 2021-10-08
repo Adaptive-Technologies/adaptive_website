@@ -3,7 +3,7 @@ import { Box } from '@mui/material'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 import useStyles from '../theme/views/body.theme'
-import Navbar from '../components/navigation/Navbar'
+import Header from './header/Header'
 import tabs from '../assets/data/tabs'
 import Hero from './hero/Hero'
 import OurProcess from './our_process/OurProcess'
@@ -18,7 +18,7 @@ const App = () => {
   return (
     <Router>
       <Box className={classes.body}>
-        <Navbar />
+        <Header />
         <Hero id={tabs[0].name} />
         <OurProcess id={tabs[1].name} />
         <ClientsSection />
