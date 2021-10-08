@@ -1,13 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import {
   CardMedia,
   Box,
   Grid,
-  useMediaQuery,
-  SwipeableDrawer,
-  IconButton,
 } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
 import useStyles from '../../../theme/views/navbar.theme'
 import Adaptive_logo from '../../../assets/images/Adaptive_logo_WHITE_PINK.png'
 
