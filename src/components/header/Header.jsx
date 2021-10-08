@@ -5,7 +5,7 @@ import MobileNavbar from './navigation/MobileNavbar'
 import NavTab from './navigation/NavTab'
 import buildNavigationMenu from '../../modules/buildNavigationMenu'
 import tabData from '../../assets/data/tabData'
-import useStyles from '../../theme/views/navbar.theme'
+import useStyles from '../../theme/views/header.theme'
 
 const Navbar = () => {
   const classes = useStyles()
