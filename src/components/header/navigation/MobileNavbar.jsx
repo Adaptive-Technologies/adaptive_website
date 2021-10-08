@@ -8,7 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import useStyles from '../../../theme/views/navbar.theme'
 import Adaptive_logo from '../../../assets/images/Adaptive_logo_WHITE_PINK.png'
 
-const MobileNavbar = ({tabs}) => {
+const MobileNavbar = ({navigationMenu}) => {
   const classes = useStyles()
   const [drawerOpen, setDrawerOpen] = useState(false)
 
@@ -29,7 +29,7 @@ const MobileNavbar = ({tabs}) => {
         onClose={() => setDrawerOpen(false)}
         onOpen={() => setDrawerOpen(true)}
         onClick={() => setDrawerOpen(false)}>
-        {tabs}
+        {navigationMenu}
       </SwipeableDrawer>
       <IconButton
         className={classes.menuButton}

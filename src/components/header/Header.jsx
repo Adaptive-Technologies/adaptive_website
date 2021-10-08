@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import {
   Box,
   useMediaQuery,
@@ -8,23 +8,19 @@ import buildNavigationMenu from '../../modules/buildNavigationMenu'
 import DesktopNavbar from './navigation/DesktopNavbar'
 import MobileNavbar from './navigation/MobileNavbar'
 import NavTab from './navigation/NavTab'
-import tabsData from '../../assets/data/tabsData'
+import tabData from '../../assets/data/tabData'
 
 const Navbar = () => {
   const classes = useStyles()
   const isMobile = useMediaQuery('(max-width:1700px)')
-  const [tabs, setTabs] = useState([])  
-  
-  useEffect(() => {
-    setTabs(buildNavigationMenu(tabsData, NavTab))
-  }, [isMobile])
+  const navigationMenu = buildNavigationMenu(tabData, NavTab)
 
   return (
     <Box className={classes.section}>
       {isMobile ? (
-        <MobileNavbar tabs={tabs}/>
+        <MobileNavbar navigationMenu={navigationMenu}/>
       ) : (
-        <DesktopNavbar tabs={tabs}/>
+        <DesktopNavbar navigationMenu={navigationMenu}/>
       )}
     </Box>
   )

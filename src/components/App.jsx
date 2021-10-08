@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 
 import useStyles from '../theme/views/body.theme'
 import Header from './header/Header'
-import tabs from '../assets/data/tabsData'
+import tabs from '../assets/data/tabData'
 import Hero from './hero/Hero'
 import OurProcess from './our_process/OurProcess'
 import ClientsSection from './our_clients/ClientsSection'

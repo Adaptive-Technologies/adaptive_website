@@ -7,13 +7,13 @@ import {
 import useStyles from '../../../theme/views/navbar.theme'
 import Adaptive_logo from '../../../assets/images/Adaptive_logo_WHITE_PINK.png'
 
-const DesktopNavbar = ({tabs}) => {
+const DesktopNavbar = ({navigationMenu}) => {
   const classes = useStyles()
 
   return (
     <Box data-cy='navbar' className={classes.container}>
       <Grid item container lg={5} className={classes.tabsLeft}>
-        {tabs.slice(0, 3)}
+        {navigationMenu.slice(0, 3)}
       </Grid>
       <Grid item container lg={2} className={classes.logoBox}>
         <CardMedia
@@ -25,7 +25,7 @@ const DesktopNavbar = ({tabs}) => {
         />
       </Grid>
       <Grid item container lg={5} className={classes.tabsRight}>
-        {tabs.slice(3, 5)}
+        {navigationMenu.slice(3, 5)}
       </Grid>
     </Box>
   )
