@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     left: 0,
     width: '100%',
     height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    backgroundColor: 'rgba(237, 21, 108, 0.6)',
   },
   overlayContent: {
     display: 'flex',
