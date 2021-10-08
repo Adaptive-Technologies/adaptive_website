@@ -1,4 +1,4 @@
-const palette = {
+export default palette = {
   primary: {
     main: '#A581DD',
     contrastText: '#fff',
@@ -32,5 +32,3 @@ const palette = {
     primary: '#fff',
   },
 }
-
-export default palette
