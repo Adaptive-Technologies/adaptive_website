@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-import { Box, SwipeableDrawer, IconButton } from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
+import React from 'react'
+import { Box } from '@mui/material'
 import Adaptive_logo from '../../../assets/images/Adaptive_logo_WHITE_PINK.png'
 import useStyles from '../../../theme/views/header.theme'
+import Drawer from './Drawer'
 
 const MobileNavbar = ({ children }) => {
-  const [drawerOpen, setDrawerOpen] = useState(false)
   const classes = useStyles()
 
   return (
@@ -16,21 +15,7 @@ const MobileNavbar = ({ children }) => {
         data-cy='adaptive-logo'
         alt='The Adaptive Logo'
       />
-      <SwipeableDrawer
-        data-cy='navbar'
-        PaperProps={{ className: classes.drawer }}
-        anchor='right'
-        open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}
-        onOpen={() => setDrawerOpen(true)}
-        onClick={() => setDrawerOpen(false)}>
-        {children}
-      </SwipeableDrawer>
-      <IconButton
-        className={classes.menuButton}
-        onClick={() => setDrawerOpen(true)}>
-        <MenuIcon data-cy='hamburger-menu' />
-      </IconButton>
+      <Drawer>{children}</Drawer>
     </Box>
   )
 }
