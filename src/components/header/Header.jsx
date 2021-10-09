@@ -3,9 +3,9 @@ import { Box, useMediaQuery } from '@mui/material'
 import DesktopNavbar from './navigation/DesktopNavbar'
 import MobileNavbar from './navigation/MobileNavbar'
 import NavTab from './navigation/NavTab'
-import buildNavigationTabs from '../../modules/buildNavigationTabs'
-import tabData from '../../assets/data/tabData'
-import useStyles from '../../theme/views/header.theme'
+import buildNavigationTabs from 'modules/buildNavigationTabs'
+import tabData from 'assets/data/tabData'
+import useStyles from 'theme/views/header.theme'
 
 const Navbar = () => {
   const classes = useStyles()

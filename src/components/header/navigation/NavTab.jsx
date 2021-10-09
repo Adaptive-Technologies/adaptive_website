@@ -1,6 +1,6 @@
 import React from 'react'
 import { Tab, Tabs } from '@mui/material'
-import useStyles from '../../../theme/views/header.theme'
+import useStyles from 'theme/views/header.theme'
 import { HashLink } from 'react-router-hash-link'
 
 const NavTab = ({ name, label }) => {

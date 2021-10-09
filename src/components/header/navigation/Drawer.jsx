@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { SwipeableDrawer, IconButton } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
-import useStyles from '../../../theme/views/header.theme'
+import useStyles from 'theme/views/header.theme'
 
 const Drawer = ({ children }) => {
   const classes = useStyles()
