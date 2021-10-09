@@ -1,4 +1,4 @@
-const tabs = [
+const tabData = [
   {
     name: 'home',
     label: 'home',
@@ -21,4 +21,4 @@ const tabs = [
   },
 ]
 
-export default tabs
+export default tabData
