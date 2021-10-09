@@ -1,12 +1,15 @@
 import React from 'react'
 import { CardMedia, Box, Grid } from '@mui/material'
 import Adaptive_logo from '../../../assets/images/Adaptive_logo_WHITE_PINK.png'
+import useStyles from '../../../theme/views/header.theme'
 
-const DesktopNavbar = ({ navigationMenu, classes }) => {
+const DesktopNavbar = ({ children }) => {
+  const classes = useStyles()
+
   return (
     <Box data-cy='navbar' className={classes.container}>
       <Grid item container lg={5} className={classes.tabsLeft}>
-        {navigationMenu.slice(0, 3)}
+        {children.slice(0, 3)}
       </Grid>
       <Grid item container lg={2} className={classes.logoBox}>
         <CardMedia
@@ -18,7 +21,7 @@ const DesktopNavbar = ({ navigationMenu, classes }) => {
         />
       </Grid>
       <Grid item container lg={5} className={classes.tabsRight}>
-        {navigationMenu.slice(3, 5)}
+        {children.slice(3, 5)}
       </Grid>
     </Box>
   )

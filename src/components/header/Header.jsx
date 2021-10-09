@@ -3,21 +3,21 @@ import { Box, useMediaQuery } from '@mui/material'
 import DesktopNavbar from './navigation/DesktopNavbar'
 import MobileNavbar from './navigation/MobileNavbar'
 import NavTab from './navigation/NavTab'
-import buildNavigationMenu from '../../modules/buildNavigationMenu'
+import buildNavigationTabs from '../../modules/buildNavigationTabs'
 import tabData from '../../assets/data/tabData'
 import useStyles from '../../theme/views/header.theme'
 
 const Navbar = () => {
   const classes = useStyles()
-  const isMobile = useMediaQuery('(max-width:1700px)')
-  const navigationMenu = buildNavigationMenu(tabData, NavTab)
+  const isDesktop = useMediaQuery('(min-width:1700px)')
+  const navTabs = buildNavigationTabs(tabData, NavTab)
 
   return (
     <Box className={classes.section}>
-      {isMobile ? (
-        <MobileNavbar navigationMenu={navigationMenu} classes={classes} />
+      {isDesktop ? (
+        <DesktopNavbar>{navTabs}</DesktopNavbar>
       ) : (
-        <DesktopNavbar navigationMenu={navigationMenu} classes={classes} />
+        <MobileNavbar>{navTabs}</MobileNavbar>
       )}
     </Box>
   )

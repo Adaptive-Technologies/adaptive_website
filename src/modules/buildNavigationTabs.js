@@ -1,4 +1,4 @@
-const buildNavigationMenu = (tabs, Component) => {
+const buildNavigationTabs = (tabs, Component) => {
   const navTabs = tabs.map((tab, index) => {
     const props = {
       key: index,
@@ -12,4 +12,4 @@ const buildNavigationMenu = (tabs, Component) => {
   return navTabs
 }
 
-export default buildNavigationMenu
+export default buildNavigationTabs

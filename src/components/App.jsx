@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
 import { BrowserRouter as Router } from 'react-router-dom'
-
 import useStyles from '../theme/views/body.theme'
 import Header from './header/Header'
 import tabs from '../assets/data/tabData'
