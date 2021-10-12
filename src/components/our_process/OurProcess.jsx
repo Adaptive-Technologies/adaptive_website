@@ -12,11 +12,12 @@ const OurProcess = ({ id }) => {
           data-cy='our-process'
           variant='h2'
           className={classes.header}>
-          {'< our process />'}
+          {'< adaptive process />'}
         </Typography>
         <Typography data-cy='body-1' variant='body2' className={classes.body}>
           Here at Adaptive Labs we work with the vision that everything is
-          changing. We are here to help you adapt to these changes. <br></br>
+          changing. We are here to help you adapt and develop to these changes.{' '}
+          <br></br>
           Below you can read the 4 step Adaptive process
         </Typography>
       </Box>

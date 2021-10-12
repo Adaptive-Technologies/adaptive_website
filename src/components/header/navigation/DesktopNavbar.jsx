@@ -17,7 +17,9 @@ const DesktopNavbar = ({ children }) => {
           component='img'
           image={Adaptive_logo}
           data-cy='adaptive-logo'
+          alt='Adaptive Labs'
           variant='contained'
+          name='Adaptive Labs'
         />
       </Grid>
       <Grid item container lg={5} className={classes.tabsRight}>
