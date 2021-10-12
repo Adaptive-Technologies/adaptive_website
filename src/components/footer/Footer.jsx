@@ -1,7 +1,5 @@
 import React from 'react'
-import Goo from 'gooey-react'
 import { Box, useMediaQuery } from '@mui/material'
-import { animated, useSpring } from 'react-spring'
 import useStyles from '../../theme/views/footer.theme'
 import theme from '../../theme/theme'
 import Adaptive_logo from '../../assets/images/Adaptive_logo_WHITE_PINK.png'
