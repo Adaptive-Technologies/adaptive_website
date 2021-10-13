@@ -37,10 +37,12 @@ const useStyles = makeStyles((theme) => ({
   },
   staffDescription: {
     [theme.breakpoints.up('xs')]: {
+      textAlign: 'center',
       maxWidth: '600px',
       margin: '0 auto',
     },
     [theme.breakpoints.up('md')]: {
+      textAlign: 'left',
       maxWidth: '100%',
     },
   },
