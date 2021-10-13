@@ -51,12 +51,30 @@ const components = {
         props: { special: 'gradient' },
         style: {
           background: 'linear-gradient(45deg, #4ba9ff 30%, #f84b9b 90%)',
+          '&:hover': {
+            background: 'linear-gradient(45deg, #4ba9ff 20%, #f84b9b 80%)',
+          },
           border: 0,
           borderRadius: 30,
           boxShadow: 'inset 0 3px 5px 2px rgba(255, 105, 135, .3)',
           color: 'white',
           padding: '8px 30px',
           textTransform: 'uppercase',
+        },
+      },
+      {
+        props: { special: 'orange' },
+        style: {
+          background: '#E59240',
+          '&:hover': {
+            background: '#CC8137',
+          },
+          border: 0,
+          borderRadius: 30,
+          color: 'white',
+          padding: '8px 30px',
+          textTransform: 'uppercase',
+          margin: 'auto'
         },
       },
     ],

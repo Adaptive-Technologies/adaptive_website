@@ -21,7 +21,7 @@ const DesktopNavbar = ({ children }) => {
         />
       </Grid>
       <Grid item container lg={5} className={classes.tabsRight}>
-        {children.slice(3, 5)}
+        {children.slice(3, 6)}
       </Grid>
     </Box>
   )
