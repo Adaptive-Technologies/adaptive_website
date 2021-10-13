@@ -3,10 +3,10 @@ import React from 'react'
 import useStyles from '../theme/views/craftAcademy.theme'
 import CraftAcademyLogo from '../assets/images/craft_academy.svg'
 
-const CraftAcademy = () => {
+const CraftAcademy = ({ id }) => {
   const classes = useStyles()
   return (
-    <Box className={classes.section}>
+    <Box className={classes.section} id={id}>
       <Container maxWidth='md'>
         <Typography className={classes.header} data-cy='header' variant='h2'>
           {'< craft academy />'}
