@@ -32,11 +32,8 @@ const useStyles = makeStyles((theme) => ({
   },
   logo: {
     width: '100px',
-    [theme.breakpoints.up('xxl')]: {
-      width: '200px',
-    },
     [theme.breakpoints.up('kkkk')]: {
-      width: '300px',
+      width: '200px',
     },
   },
 }))
