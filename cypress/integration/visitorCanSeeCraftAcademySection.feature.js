@@ -21,7 +21,7 @@ describe('Visitor can see Craft Academy section', () => {
             'contain.text',
             'Digitalization is not only changing the way we do business, it'
           )
-          cy.get('[data-cy=description-1]').should(
+          cy.get('[data-cy=description-2]').should(
             'contain.text',
             'Craft Academy is our training and education'
           )

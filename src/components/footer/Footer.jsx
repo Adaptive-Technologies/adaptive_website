@@ -39,7 +39,7 @@ const Footer = () => {
         <img
           className={classes.logo}
           src={Adaptive_logo}
-          data-cy='logo'
+          data-cy='footer-logo'
           alt='Adaptive Labs Nordics AB Logo'
         />
       </Box>

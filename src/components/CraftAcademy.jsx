@@ -6,7 +6,7 @@ import CraftAcademyLogo from '../assets/images/craft_academy.svg'
 const CraftAcademy = ({ id }) => {
   const classes = useStyles()
   return (
-    <Box className={classes.section} id={id}>
+    <Box data-cy='craft-academy' className={classes.section} id={id}>
       <Container maxWidth='md'>
         <Typography className={classes.header} data-cy='header' variant='h2'>
           {'< craft academy />'}
@@ -14,7 +14,7 @@ const CraftAcademy = ({ id }) => {
         <Typography
           className={classes.subHeader}
           data-cy='sub-header'
-          variant='h5'>
+          variant='h4'>
           The future is written in code
         </Typography>
         <Typography
@@ -44,9 +44,9 @@ const CraftAcademy = ({ id }) => {
         />
         <Box className={classes.button}>
           <Button
-            data-cy='contact-us-btn'
+            data-cy='button'
             special='orange'
-            smooth
+            target='_blank'
             href='https://craftacademy.se'>
             {`{ adapt yourself }`}
           </Button>
