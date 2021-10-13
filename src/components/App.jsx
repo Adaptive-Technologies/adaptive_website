@@ -6,6 +6,7 @@ import Header from './header/Header'
 import tabs from '../assets/data/tabData'
 import Hero from './hero/Hero'
 import OurProcess from './our_process/OurProcess'
+import CraftAcademy from './CraftAcademy'
 import ClientsSection from './our_clients/ClientsSection'
 import Technologies from './Technologies'
 import AboutUs from './AboutUs'
@@ -20,6 +21,7 @@ const App = () => {
         <Header />
         <Hero id={tabs[0].name} />
         <OurProcess id={tabs[1].name} />
+        <CraftAcademy />
         <ClientsSection />
         <Technologies id={tabs[2].name} />
         <Box className={classes.backgroundGradient}>
