@@ -8,6 +8,10 @@ const tabData = [
     label: 'our process',
   },
   {
+    name: 'craft-academy',
+    label: 'craft academy',
+  },
+  {
     name: 'technologies',
     label: 'technologies',
   },
