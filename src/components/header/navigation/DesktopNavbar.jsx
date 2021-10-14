@@ -1,6 +1,6 @@
 import React from 'react'
 import { CardMedia, Box, Grid } from '@mui/material'
-import Adaptive_logo from 'assets/images/Adaptive_logo_WHITE_PINK.png'
+import Adaptive_logo from 'assets/images/Adaptive_labs_logo_WHITE_PINK.png'
 import useStyles from 'theme/views/header.theme'
 
 const DesktopNavbar = ({ children }) => {
@@ -17,7 +17,9 @@ const DesktopNavbar = ({ children }) => {
           component='img'
           image={Adaptive_logo}
           data-cy='adaptive-logo'
+          alt='Adaptive Labs'
           variant='contained'
+          name='Adaptive Labs'
         />
       </Grid>
       <Grid item container lg={5} className={classes.tabsRight}>

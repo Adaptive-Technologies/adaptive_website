@@ -34,9 +34,9 @@ const Hero = ({ id }) => {
         special='center'>
         <Box className={classes.overlayContent}>
           <Typography data-cy='slogan' variant='h1'>
-            Digital transformation is a game changer
-            <br></br>
-            <span className={classes.subHeader}>We help you Adapt</span>
+            Digital Transformation is a Game-Changer
+            <br/>
+            Adaptive Labs Helps You
           </Typography>
 
           <Button
