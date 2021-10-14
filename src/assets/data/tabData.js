@@ -1,4 +1,4 @@
-const tabs = [
+const tabData = [
   {
     name: 'home',
     label: 'home',
@@ -6,6 +6,10 @@ const tabs = [
   {
     name: 'our-process',
     label: 'our process',
+  },
+  {
+    name: 'craft-academy',
+    label: 'craft academy',
   },
   {
     name: 'technologies',
@@ -21,4 +25,4 @@ const tabs = [
   },
 ]
 
-export default tabs
+export default tabData

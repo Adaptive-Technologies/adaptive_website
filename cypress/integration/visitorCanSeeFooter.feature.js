@@ -11,7 +11,7 @@ describe('Visitor can see footer', () => {
       })
 
       it('is expected to have correct contents', () => {
-        cy.get('[data-cy=logo]')
+        cy.get('[data-cy=footer-logo]')
           .should('have.attr', 'alt')
           .should('contain', 'Adaptive Labs Nordics AB Logo')
       })
