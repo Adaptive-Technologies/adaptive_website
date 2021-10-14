@@ -36,7 +36,7 @@ const Hero = ({ id }) => {
           <Typography data-cy='slogan' variant='h1'>
             Digital Transformation is a Game-Changer
             <br/>
-            Adaptive Labs Helps you
+            Adaptive Labs Helps You
           </Typography>
 
           <Button
