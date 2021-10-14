@@ -38,7 +38,7 @@ const ContactUs = ({ id }) => {
               possible solution.
             </Typography>
             <Typography className={classes.contactData} variant='h4'>
-              Email: info@adaptivelabsnordics.se
+              Email: info@adaptivelabs.se
             </Typography>
             <Box className={classes.links}>
               <Link
