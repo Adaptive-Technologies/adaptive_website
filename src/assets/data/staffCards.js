@@ -31,7 +31,7 @@ const staffCards = [
     name: 'Kim Haaga',
     image: Kim,
     description:
-      'I am a former tinsmith and probably worlds best worst golfer. Craftsmanship at heart and making the clients happy is most important to me and what keeps me going',
+      "Former tinsmith and probably the world's best worst golfer. Craftsmanship at heart and making the clients happy is most important to me and what keeps me going",
   },
   {
     id: 5,

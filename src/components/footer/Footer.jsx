@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, useMediaQuery } from '@mui/material'
 import useStyles from '../../theme/views/footer.theme'
 import theme from '../../theme/theme'
-import Adaptive_logo from '../../assets/images/Adaptive_logo_WHITE_PINK.png'
+import Adaptive_logo from '../../assets/images/Adaptive_labs_logo_WHITE_PINK.png'
 
 const Footer = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('lg'))
@@ -40,7 +40,8 @@ const Footer = () => {
           className={classes.logo}
           src={Adaptive_logo}
           data-cy='footer-logo'
-          alt='Adaptive Labs Nordics AB Logo'
+          alt='Adaptive Labs'
+          name='Adaptive Labs'
         />
       </Box>
     </Box>
