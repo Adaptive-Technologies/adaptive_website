@@ -48,7 +48,7 @@ const CraftAcademy = ({ id }) => {
             special='orange'
             target='_blank'
             href='https://craftacademy.se'>
-            {`{ adapt yourself }`}
+            {`{ Craft Academy }`}
           </Button>
         </Box>
       </Container>
