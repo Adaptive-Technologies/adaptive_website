@@ -2,15 +2,15 @@ import React, { Suspense } from 'react'
 import { HashLink } from 'react-router-hash-link'
 import { Box, Button, Grid, Typography } from '@mui/material'
 
-import useStyles from '../theme/views/hero.theme'
+import useStyles from '../../theme/views/hero.theme'
 
 const Hero = ({ id }) => {
   const classes = useStyles()
   const MediumResBGVideo = React.lazy(() =>
-    import('./hero/BackgroundMediumVideo')
+    import('./BackgroundMediumVideo')
   )
   const SuperLowResBGVideo = React.lazy(() =>
-    import('./hero/BackgroundLowVideo')
+    import('./BackgroundLowVideo')
   )
 
   const backgroundGradient = <Box className={classes.backgroundGradient} />
