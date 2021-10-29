@@ -19,10 +19,10 @@ test:
   phases:
     preTest:
       commands:
-        - npm ci
-        - npm install wait-on
-        - npm install pm2
-        - npm install mocha@5.2.0 mochawesome mochawesome-merge mochawesome-report-generator
+        - yarn ci
+        - yarn add wait-on
+        - yarn add pm2
+        - yarn add mocha@5.2.0 mochawesome mochawesome-merge mochawesome-report-generator
         - npx pm2 start npm -- start
         - 'npx wait-on http://localhost:3001/#/'
     test:
