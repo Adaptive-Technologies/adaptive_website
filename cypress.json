@@ -1,4 +1,6 @@
 {
     "baseUrl": "http://localhost:3001",
-    "chromeWebSecurity": false
+    "chromeWebSecurity": false,
+    "video": false,
+    "screenshot": false
 }
