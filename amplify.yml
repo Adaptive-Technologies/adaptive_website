@@ -19,19 +19,14 @@ test:
   phases:
     preTest:
       commands:
-        - yarn ci
-        - yarn add wait-on
-        - yarn add pm2
+        - yarn install
         - yarn add mocha@5.2.0 mochawesome mochawesome-merge mochawesome-report-generator
-        - npx pm2 start npm -- start
-        - 'npx wait-on http://localhost:3001/#/'
     test:
       commands:
-        - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
+        - npx start-test 'yarn start' 3000 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
     postTest:
       commands:
         - npx mochawesome-merge cypress/report/mochawesome-report/mochawesome*.json > cypress/report/mochawesome.json
-        - npx pm2 kill
   artifacts:
     baseDirectory: cypress
     configFilePath: '**/mochawesome.json'
