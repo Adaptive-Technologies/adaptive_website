@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - yarn install
+        - yarn install --frozen-lockfile
     # IMPORTANT - Please verify your build commands
     build:
       commands:
@@ -25,8 +25,9 @@ test:
   phases:
     preTest:
       commands:
-        - yarn install
+        - yarn install --frozen.lockfile
         - yarn add mocha mochawesome mochawesome-merge mochawesome-report-generator
+        - "npx serve -l 3000 -s build & npx wait-on http://127.0.0.1:3001"
     test:
       commands:
         - npx start-test 'yarn start' 3000 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'
