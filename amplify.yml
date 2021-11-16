@@ -1,0 +1,37 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - yarn install --frozen-lockfile
+    # IMPORTANT - Please verify your build commands
+    build:
+      commands:
+        - yarn run build:dev
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+test:
+  artifacts:
+    baseDirectory: cypress
+    configFilePath: '**/mochawesome.json'
+    files:
+      - '**/*.png'
+      - '**/*.mp4'
+  phases:
+    preTest:
+      commands:
+        - yarn install --frozen.lockfile
+        - yarn add mocha mochawesome mochawesome-merge mochawesome-report-generator
+        - "npx serve -l 3001 -s build & npx wait-on http://127.0.0.1:3001/#/"
+    test:
+      commands:
+        - 'npx cypress run --reporter mochawesome --reporter-options "reportDir=cypress/report/mochawesome-report,overwrite=false,html=false,json=true,timestamp=mmddyyyy_HHMMss"'   
+    postTest:
+      commands:
+        - npx mochawesome-merge cypress/report/mochawesome-report/mochawesome*.json > cypress/report/mochawesome.json
+        - npx kill-port 3001
