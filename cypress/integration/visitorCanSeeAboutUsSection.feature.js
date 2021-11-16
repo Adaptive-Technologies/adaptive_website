@@ -22,15 +22,15 @@ describe('Visitor can see about us section', () => {
 
       it("is expected to list company's staff", () => {
         cy.get('[data-cy=about-us]').within(() => {
-          cy.get('[data-cy=staff-card]').should('have.length', 5)
+          cy.get('[data-cy=staff-card]').should('have.length', 4)
           cy.get('[data-cy=staff-card]')
             .first()
             .within(() => {
               cy.get('[data-cy=image]').should('be.visible')
-              cy.get('[data-cy=name]').should('contain', 'Seva Deriushkin')
+              cy.get('[data-cy=name]').should('contain', 'Jens Østgaard')
               cy.get('[data-cy=description]').should(
                 'contain',
-                'Previously a physicist that dealt with'
+                'As a designer educated in Florens, I thrive'
               )
             })
         })
