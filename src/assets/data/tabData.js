@@ -16,8 +16,8 @@ const tabData = [
     label: 'technologies',
   },
   {
-    name: 'about',
-    label: 'about',
+    name: 'news',
+    label: 'news',
   },
   {
     name: 'contact-us',

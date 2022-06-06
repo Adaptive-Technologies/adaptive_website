@@ -65,13 +65,30 @@ const AboutUs = ({ id }) => {
           data-cy='description'
           variant='body1'
           className={classes.description}>
-          Adaptive Labs Nordics was founded by a group of passionate developers
-          and designers. With a goal to build a company that puts its customers
-          needs first through Agile Methodologies and close partnerships. <br></br><br></br> Using
-          automated testing to deliver high quality full stack applications on
-          time and within scope. We use agile and unprecedented
-          creativity to meet your technical needs. Driving innovation and the
-          future by teaching future developers through Craft Academy.
+          Since its inception in September 2021 Adaptive Labs, a Gothenburg
+          based IT services operation, has helped businesses around Europe and
+          North America in adopting technology to support their core business,
+          and help them increase efficiency, productivity and profitability.
+          Digitalization is however not only changing the way we do business, it
+          also changes the way we work and what skills we as professionals need
+          to have. In order to address the current shortage of skill on the
+          market, Adaptive Labs has operated a training and education service
+          under the <a href="https://craftacademy.se">Craft Academy</a>  brand. Learners from around the world and with
+          various backgrounds, has been helped by Craft Academy to re-skill and
+          transition into the software development industry.
+          <br></br>
+          <br></br>
+          The company’s experience shows that training and education is closely
+          connected to consultancy, and complements the portfolio of services..
+          In order to enhance the customer experience and streamline the
+          company’s marketing, the separate brands associated with the
+          respective business areas, will be combined into one; Nomads Of Code.
+          <br></br>
+          <br></br>
+          The new brand reflects in a better way the global reach of the company
+          services as well as the focus on remote work and delivery. We believe
+          that our ols, as well as new customers, will appreciate the change and
+          benefit from a clearer communication from us.
         </Typography>
         {staffSection}
       </Container>
